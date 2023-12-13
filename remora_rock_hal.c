@@ -261,71 +261,6 @@ void SSD1362_init()
     _delay_ms(150);
     mraa_gpio_write(res, 1); //Reset pin high
     _delay_ms(150);
-
-    SSD1362_cmd(SSD1362_CMD_SET_LOCK);       // Unlock basic commands
-    SSD1362_data(0x12);
-    
-    SSD1362_cmd(SSD1362_CMD_SET_CLOCK);      // Set oscillator freq. and display clock divider
-    SSD1362_data(0xd1);                     
-    
-    SSD1362_cmd(SSD1362_CMD_SET_MUX);        // Multiplex ratio 
-	SSD1362_data(0x3f);
-    
-    SSD1362_cmd(SSD1362_CMD_SET_OFFSET);    // Set RAM offset
-    SSD1362_data(0x00);
-
-    SSD1362_cmd(SSD1362_CMD_SET_START);     // Set RAM start line
-    SSD1362_data(0x00);
-
-    SSD1362_cmd(SSD1362_CMD_SET_REMAP);     // Set remap
-    SSD1362_data(0x14);
-    SSD1362_data(0x11);
-
-    SSD1362_cmd(SSD1362_CMD_SET_GPIOS);     // Set GPIO
-    SSD1362_data(0x00);
-
-    SSD1362_cmd(SSD1362_CMD_SET_VDD);       // Function selection
-    SSD1362_data(0x00);
-
-    SSD1362_cmd(SSD1362_CMD_SET_ENHANCE_A); // Enable external VSL
-    SSD1362_data(0xA0);
-    SSD1362_data(0xB5);
-
-    SSD1362_cmd(SSD1362_CMD_SET_CONTRAST);
-    SSD1362_data(0x95);
-
-    SSD1362_cmd(SSD1362_CMD_SET_BRIGHTNESS);
-    SSD1362_data(0x0F);
-
-    SSD1362_cmd(SSD1362_CMD_SET_GREYS_DEF);
-
-    SSD1362_cmd(SSD1362_CMD_SET_PHASE);
-    SSD1362_data(0x74);
-    
-    SSD1362_cmd(SSD1362_CMD_SET_ENHANCE_B);
-    SSD1362_data(SSD1362_DEFAULT_ENHANCE_B1);
-    SSD1362_data(SSD1362_DEFAULT_ENHANCE_B2);
-
-    SSD1362_cmd(SSD1362_CMD_SET_PRE_VOLT);
-    SSD1362_data(0x1F); // Datasheet and example values differ -- 1F and 17 respectively
-
-    SSD1362_cmd(SSD1362_CMD_SET_PERIOD);
-    SSD1362_data(0x08);
-
-    SSD1362_cmd(SSD1362_CMD_SET_COM_VOLT);
-    SSD1362_data(0x07);
-
-    SSD1362_cmd(SSD1362_CMD_SET_PIX_NORM);
-                 
-    // 0xA4 => Entire Display OFF 
-    // 0xA5 => Entire Display ON, all pixels Grayscale level 15
-    // 0xA6 => Normal Display (Default)
-    // 0xA7 => Inverse Display
-
-    SSD1362_cmd(SSD1362_CMD_SET_PART_OFF); // Exit partial display mode
-
-    SSD1362_cmd(SSD1362_CMD_SET_DISP_ON); // Sleep mode off
-
     _delay_ms(150);
 
 }
@@ -372,27 +307,6 @@ void SSD1362_fb_checker()
                 fb[(i * BUFFER_HEIGHT) + j] = w[j];
             }
         }
-    }
-}
-
-void SSD1362_fb_pixel(uint8_t x_virtual, uint8_t y) 
-{
-    // Convert x from a virtual address to a physical address
-    // uint8_t x_physical = x_virtual >> 1;
-
-    // [0, 1] [2, 3] [4, 5]  ----> Virtual Address space
-    //    |      |      |
-    //    v      v      v
-    //    0      1      2    ----> Physical Address space
-
-    // Check if the virtual address is odd or even (thanks Jack)
-    if (x_virtual & 0x01U) {
-        // If the virtual address is odd, set the right nibble
-        fb[(y * BUFFER_WIDTH) + x_virtual >> 1U]  |= 0x0FU;
-    }
-    else {
-        // If the virtual address is even, set the left nibble
-        fb[(y * BUFFER_WIDTH) + x_virtual >> 1U]  |= 0xF0U;
     }
 }
 
