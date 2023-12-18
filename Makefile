@@ -164,8 +164,8 @@ endif
 
 
 # Defaults
-PRODUCT ?= remora_hal
-PRODUCT_DIR ?= remora_hal
+PRODUCT ?= hal
+PRODUCT_DIR ?= hal
 BUILD_TYPE ?= Release
 SRC_DIRS ?= src/noritake src/newhaven src/hal_base src/rpi_ws281x
 
