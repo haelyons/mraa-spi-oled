@@ -191,13 +191,15 @@ int main(int argc, char** argv)
     // USE BYTE FUNCTION
     fprintf(stdout, "Opened SPI on Channel 3 [SSD1362]\n");
     fflush(stdout);
-
+    
+    /* REMOVE FOR NOW, CAUSING SEG FAULT 
     SSD1362_fb_checker();
     err = SSD1362_fb_write();
     if (err != 0){
         fprintf(stdout, "Error in writing fb to mraa_spi_write_buf()!");
         goto err_exit;
     }
+    */
 
     _delay_ms(1000000); // 10s delay
 
