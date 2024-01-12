@@ -1,812 +1,818 @@
+# cat /var/log/messages
 Jan  1 12:00:01 smc syslog.info syslogd started: BusyBox v1.35.0
-Jan  1 12:00:01 smc kern.notice kernel: klogd started: BusyBox v1.35.0 (2024-01-11 03:43:10 GMT)
-Jan  1 12:00:01 smc kern.info kernel: [   12.872659] Booting Linux on physical CPU 0x0000000000 [0x412fd050]
-Jan  1 12:00:01 smc kern.notice kernel: [   12.872696] Linux version 5.10.160 (hal@WIN-00335) (aarch64-buildroot-linux-gnu-gcc.br_real (Buildroot 2022.08.1) 11.3.0, GNU ld (GNU Binutils) 2.37) #1 SMP Thu Jan 11 03:55:14 GMT 2024
-Jan  1 12:00:01 smc kern.info kernel: [   12.883341] Machine model: Radxa ROCK3 Model A
-Jan  1 12:00:01 smc kern.info kernel: [   12.883449] efi: UEFI not found.
-Jan  1 12:00:01 smc kern.info kernel: [   12.883721] OF: fdt: Reserved memory: failed to reserve memory for node 'drm-logo@00000000': base 0x0000000000000000, size 0 MiB
-Jan  1 12:00:01 smc kern.info kernel: [   12.883752] OF: fdt: Reserved memory: failed to reserve memory for node 'drm-cubic-lut@00000000': base 0x0000000000000000, size 0 MiB
-Jan  1 12:00:01 smc kern.info kernel: [   12.959224] Zone ranges:
-Jan  1 12:00:01 smc kern.info kernel: [   12.959247]   DMA      [mem 0x0000000000200000-0x000000007fffffff]
-Jan  1 12:00:01 smc kern.info kernel: [   12.959266]   DMA32    empty
-Jan  1 12:00:01 smc kern.info kernel: [   12.959279]   Normal   empty
-Jan  1 12:00:01 smc kern.info kernel: [   12.959291] Movable zone start for each node
-Jan  1 12:00:01 smc kern.info kernel: [   12.959299] Early memory node ranges
-Jan  1 12:00:01 smc kern.info kernel: [   12.959310]   node   0: [mem 0x0000000000200000-0x000000007fffffff]
-Jan  1 12:00:01 smc kern.info kernel: [   12.959325] Initmem setup node 0 [mem 0x0000000000200000-0x000000007fffffff]
-Jan  1 12:00:01 smc kern.debug kernel: [   12.959338] On node 0 totalpages: 523776
-Jan  1 12:00:01 smc kern.debug kernel: [   12.959347]   DMA zone: 8184 pages used for memmap
-Jan  1 12:00:01 smc kern.debug kernel: [   12.959354]   DMA zone: 0 pages reserved
-Jan  1 12:00:01 smc kern.debug kernel: [   12.959360]   DMA zone: 523776 pages, LIFO batch:63
-Jan  1 12:00:01 smc kern.info kernel: [   12.975209] cma: Reserved 16 MiB at 0x000000007bc00000
-Jan  1 12:00:01 smc kern.info kernel: [   12.975360] psci: probing for conduit method from DT.
-Jan  1 12:00:01 smc kern.info kernel: [   12.975384] psci: PSCIv1.1 detected in firmware.
-Jan  1 12:00:01 smc kern.info kernel: [   12.975394] psci: Using standard PSCI v0.2 function IDs
-Jan  1 12:00:01 smc kern.info kernel: [   12.975405] psci: MIGRATE_INFO_TYPE not supported.
-Jan  1 12:00:01 smc kern.info kernel: [   12.975418] psci: SMC Calling Convention v1.2
-Jan  1 12:00:01 smc kern.info kernel: [   12.975986] percpu: Embedded 32 pages/cpu s93160 r8192 d29720 u131072
-Jan  1 12:00:01 smc kern.debug kernel: [   12.976053] pcpu-alloc: s93160 r8192 d29720 u131072 alloc=32*4096
-Jan  1 12:00:01 smc kern.debug kernel: [   12.976067] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
-Jan  1 12:00:01 smc kern.info kernel: [   12.976243] Detected VIPT I-cache on CPU0
-Jan  1 12:00:01 smc kern.info kernel: [   12.976327] CPU features: detected: GIC system register CPU interface
-Jan  1 12:00:01 smc kern.info kernel: [   12.976342] CPU features: detected: Virtualization Host Extensions
-Jan  1 12:00:01 smc kern.info kernel: [   12.976362] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
-Jan  1 12:00:01 smc kern.info kernel: [   12.976388] alternatives: patching kernel code
-Jan  1 12:00:01 smc kern.info kernel: [   12.976943] Built 1 zonelists, mobility grouping on.  Total pages: 515592
-Jan  1 12:00:01 smc kern.notice kernel: [   12.976963] Kernel command line: root=/dev/mmcblk1p2 earlyprintk console=ttyS2,1500000n8 rw rootwait
-Jan  1 12:00:01 smc kern.info kernel: [   12.977972] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
-Jan  1 12:00:01 smc kern.info kernel: [   12.978336] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
-Jan  1 12:00:01 smc kern.info kernel: [   12.978353] mem auto-init: stack:off, heap alloc:off, heap free:off
-Jan  1 12:00:01 smc kern.info kernel: [   13.016789] Memory: 2006268K/2095104K available (14720K kernel code, 3258K rwdata, 5956K rodata, 6400K init, 542K bss, 72452K reserved, 16384K cma-reserved)
-Jan  1 12:00:01 smc kern.info kernel: [   13.017027] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
-Jan  1 12:00:01 smc kern.info kernel: [   13.017097] ftrace: allocating 57805 entries in 226 pages
-Jan  1 12:00:01 smc kern.info kernel: [   13.166373] ftrace: allocated 226 pages with 4 groups
-Jan  1 12:00:01 smc kern.info kernel: [   13.166904] rcu: Hierarchical RCU implementation.
-Jan  1 12:00:01 smc kern.info kernel: [   13.166923] rcu:       RCU event tracing is enabled.
-Jan  1 12:00:01 smc kern.info kernel: [   13.166935] rcu:       RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
-Jan  1 12:00:01 smc kern.info kernel: [   13.166946]    Rude variant of Tasks RCU enabled.
-Jan  1 12:00:01 smc kern.info kernel: [   13.166954]    Tracing variant of Tasks RCU enabled.
-Jan  1 12:00:01 smc kern.info kernel: [   13.166963] rcu: RCU calculated value of scheduler-enlistment delay is 30 jiffies.
-Jan  1 12:00:01 smc kern.info kernel: [   13.166973] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
-Jan  1 12:00:01 smc kern.info kernel: [   13.174958] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
-Jan  1 12:00:01 smc kern.info kernel: [   13.177935] GICv3: GIC: Using split EOI/Deactivate mode
-Jan  1 12:00:01 smc kern.info kernel: [   13.177957] GICv3: 320 SPIs implemented
-Jan  1 12:00:01 smc kern.info kernel: [   13.177969] GICv3: 0 Extended SPIs implemented
-Jan  1 12:00:01 smc kern.info kernel: [   13.178032] GICv3: Distributor has no Range Selector support
-Jan  1 12:00:01 smc kern.info kernel: [   13.178053] GICv3: 16 PPIs implemented
-Jan  1 12:00:01 smc kern.info kernel: [   13.178104] GICv3: CPU0: found redistributor 0 region 0:0x00000000fd460000
-Jan  1 12:00:01 smc kern.info kernel: [   13.178340] ITS [mem 0xfd440000-0xfd45ffff]
-Jan  1 12:00:01 smc kern.info kernel: [   13.178448] ITS@0x00000000fd440000: allocated 8192 Devices @3c0000 (indirect, esz 8, psz 64K, shr 0)
-Jan  1 12:00:01 smc kern.info kernel: [   13.178507] ITS@0x00000000fd440000: allocated 32768 Interrupt Collections @3d0000 (flat, esz 2, psz 64K, shr 0)
-Jan  1 12:00:01 smc kern.info kernel: [   13.178525] ITS: using cache flushing for cmd queue
-Jan  1 12:00:01 smc kern.info kernel: [   13.179129] GICv3: using LPI property table @0x00000000003f0000
-Jan  1 12:00:01 smc kern.info kernel: [   13.179311] GIC: using cache flushing for LPI property table
-Jan  1 12:00:01 smc kern.info kernel: [   13.179327] GICv3: CPU0: using allocated LPI pending table @0x0000000000800000
-Jan  1 12:00:01 smc kern.info kernel: [   13.227943] arch_timer: cp15 timer(s) running at 24.00MHz (phys).
-Jan  1 12:00:01 smc kern.info kernel: [   13.227973] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
-Jan  1 12:00:01 smc kern.info kernel: [   13.227993] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
-Jan  1 12:00:01 smc kern.info kernel: [   13.229896] Console: colour dummy device 80x25
-Jan  1 12:00:01 smc kern.info kernel: [   13.229958] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=80000)
-Jan  1 12:00:01 smc kern.info kernel: [   13.229983] pid_max: default: 32768 minimum: 301
-Jan  1 12:00:01 smc kern.info kernel: [   13.230178] LSM: Security Framework initializing
-Jan  1 12:00:01 smc kern.info kernel: [   13.230290] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
-Jan  1 12:00:01 smc kern.info kernel: [   13.230318] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
-Jan  1 12:00:01 smc kern.info kernel: [   13.233717] rcu: Hierarchical SRCU implementation.
-Jan  1 12:00:01 smc kern.info kernel: [   13.235028] Platform MSI: interrupt-controller@fd440000 domain created
-Jan  1 12:00:01 smc kern.info kernel: [   13.235694] PCI/MSI: /interrupt-controller@fd400000/interrupt-controller@fd440000 domain created
-Jan  1 12:00:01 smc kern.info kernel: [   13.236218] EFI services will not be available.
-Jan  1 12:00:01 smc kern.info kernel: [   13.236902] smp: Bringing up secondary CPUs ...
-Jan  1 12:00:01 smc kern.info kernel: [   13.238196] Detected VIPT I-cache on CPU1
-Jan  1 12:00:01 smc kern.info kernel: [   13.238254] GICv3: CPU1: found redistributor 100 region 0:0x00000000fd480000
-Jan  1 12:00:01 smc kern.info kernel: [   13.238282] GICv3: CPU1: using allocated LPI pending table @0x0000000000810000
-Jan  1 12:00:01 smc kern.info kernel: [   13.238362] CPU1: Booted secondary processor 0x0000000100 [0x412fd050]
-Jan  1 12:00:01 smc kern.info kernel: [   13.239728] Detected VIPT I-cache on CPU2
-Jan  1 12:00:01 smc kern.info kernel: [   13.239779] GICv3: CPU2: found redistributor 200 region 0:0x00000000fd4a0000
-Jan  1 12:00:01 smc kern.info kernel: [   13.239802] GICv3: CPU2: using allocated LPI pending table @0x0000000000820000
-Jan  1 12:00:01 smc kern.info kernel: [   13.239861] CPU2: Booted secondary processor 0x0000000200 [0x412fd050]
-Jan  1 12:00:01 smc kern.info kernel: [   13.241245] Detected VIPT I-cache on CPU3
-Jan  1 12:00:01 smc kern.info kernel: [   13.241294] GICv3: CPU3: found redistributor 300 region 0:0x00000000fd4c0000
-Jan  1 12:00:01 smc kern.info kernel: [   13.241317] GICv3: CPU3: using allocated LPI pending table @0x0000000000830000
-Jan  1 12:00:01 smc kern.info kernel: [   13.241375] CPU3: Booted secondary processor 0x0000000300 [0x412fd050]
-Jan  1 12:00:01 smc kern.info kernel: [   13.241588] smp: Brought up 1 node, 4 CPUs
-Jan  1 12:00:01 smc kern.info kernel: [   13.241648] SMP: Total of 4 processors activated.
-Jan  1 12:00:01 smc kern.info kernel: [   13.241660] CPU features: detected: Privileged Access Never
-Jan  1 12:00:01 smc kern.info kernel: [   13.241670] CPU features: detected: User Access Override
-Jan  1 12:00:01 smc kern.info kernel: [   13.241681] CPU features: detected: 32-bit EL0 Support
-Jan  1 12:00:01 smc kern.info kernel: [   13.241690] CPU features: detected: Common not Private translations
-Jan  1 12:00:01 smc kern.info kernel: [   13.241701] CPU features: detected: RAS Extension Support
-Jan  1 12:00:01 smc kern.info kernel: [   13.241710] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
-Jan  1 12:00:01 smc kern.info kernel: [   13.241720] CPU features: detected: CRC32 instructions
-Jan  1 12:00:01 smc kern.info kernel: [   13.241730] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
-Jan  1 12:00:01 smc kern.info kernel: [   13.241742] CPU features: detected: 32-bit EL1 Support
-Jan  1 12:00:01 smc kern.info kernel: [   13.241752] CPU features: detected: RCpc load-acquire (LDAPR)
-Jan  1 12:00:01 smc kern.info kernel: [   13.241872] CPU: All CPU(s) started at EL2
-Jan  1 12:00:01 smc kern.info kernel: [   13.243730] devtmpfs: initialized
-Jan  1 12:00:01 smc kern.notice kernel: [   13.284907] Registered cp15_barrier emulation handler
-Jan  1 12:00:01 smc kern.notice kernel: [   13.284945] Registered setend emulation handler
-Jan  1 12:00:01 smc kern.info kernel: [   13.285272] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
-Jan  1 12:00:01 smc kern.info kernel: [   13.285306] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
-Jan  1 12:00:01 smc kern.info kernel: [   13.286355] pinctrl core: initialized pinctrl subsystem
-Jan  1 12:00:01 smc kern.debug kernel: [   13.286864] regulator-dummy: no parameters, enabled
-Jan  1 12:00:01 smc kern.info kernel: [   13.287410] DMI not present or invalid.
-Jan  1 12:00:01 smc kern.info kernel: [   13.288554] NET: Registered protocol family 16
-Jan  1 12:00:01 smc kern.info kernel: [   13.291894] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
-Jan  1 12:00:01 smc kern.info kernel: [   13.292226] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
-Jan  1 12:00:01 smc kern.info kernel: [   13.296739] Registered FIQ tty driver
-Jan  1 12:00:01 smc kern.info kernel: [   13.297475] thermal_sys: Registered thermal governor 'fair_share'
-Jan  1 12:00:01 smc kern.info kernel: [   13.297485] thermal_sys: Registered thermal governor 'step_wise'
-Jan  1 12:00:01 smc kern.info kernel: [   13.297499] thermal_sys: Registered thermal governor 'user_space'
-Jan  1 12:00:01 smc kern.info kernel: [   13.297511] thermal_sys: Registered thermal governor 'power_allocator'
-Jan  1 12:00:01 smc kern.warn kernel: [   13.298290] thermal thermal_zone1: power_allocator: sustainable_power will be estimated
-Jan  1 12:00:01 smc kern.info kernel: [   13.298420] cpuidle: using governor menu
-Jan  1 12:00:01 smc kern.info kernel: [   13.298866] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
-Jan  1 12:00:01 smc kern.info kernel: [   13.299122] ASID allocator initialised with 65536 entries
-Jan  1 12:00:01 smc kern.info kernel: [   13.302848] ramoops: dmesg-0   0x20000@0x0000000000110000
-Jan  1 12:00:01 smc kern.info kernel: [   13.302902] ramoops: console   0x80000@0x0000000000130000
-Jan  1 12:00:01 smc kern.info kernel: [   13.302947] ramoops: pmsg      0x50000@0x00000000001b0000
-Jan  1 12:00:01 smc kern.info kernel: [   13.303701] printk: console [ramoops-1] enabled
-Jan  1 12:00:01 smc kern.info kernel: [   13.303717] pstore: Registered ramoops as persistent store backend
-Jan  1 12:00:01 smc kern.info kernel: [   13.303733] ramoops: using 0xf0000@0x110000, ecc: 0
-Jan  1 12:00:01 smc kern.info kernel: [   13.383797] rockchip-gpio fdd60000.gpio0: probed /pinctrl/gpio0@fdd60000
-Jan  1 12:00:01 smc kern.info kernel: [   13.384879] rockchip-gpio fe740000.gpio1: probed /pinctrl/gpio1@fe740000
-Jan  1 12:00:01 smc kern.info kernel: [   13.385961] rockchip-gpio fe750000.gpio2: probed /pinctrl/gpio2@fe750000
-Jan  1 12:00:01 smc kern.info kernel: [   13.387084] rockchip-gpio fe760000.gpio3: probed /pinctrl/gpio3@fe760000
-Jan  1 12:00:01 smc kern.info kernel: [   13.388167] rockchip-gpio fe770000.gpio4: probed /pinctrl/gpio4@fe770000
-Jan  1 12:00:01 smc kern.info kernel: [   13.388422] rockchip-pinctrl pinctrl: probed pinctrl
-Jan  1 12:00:01 smc kern.err kernel: [   13.434065] fiq_debugger fiq_debugger.0: IRQ fiq not found
-Jan  1 12:00:01 smc kern.err kernel: [   13.434116] fiq_debugger fiq_debugger.0: IRQ wakeup not found
-Jan  1 12:00:01 smc kern.err kernel: [   13.434141] fiq_debugger_probe: could not install nmi irq handler
-Jan  1 12:00:01 smc kern.info kernel: [   13.434830] printk: console [ttyFIQ0] enabled
-Jan  1 12:00:01 smc kern.info kernel: [   13.435259] Registered fiq debugger ttyFIQ0
-Jan  1 12:00:01 smc kern.debug kernel: [   13.436143] dc_12v: 12000 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   13.436454] reg-fixed-voltage dc-12v: dc_12v supplying 12000000uV
-Jan  1 12:00:01 smc kern.debug kernel: [   13.436667] reg-fixed-voltage vcc3v3-sys: Looking up vin-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   13.436686] vcc3v3_sys: supplied by dc_12v
-Jan  1 12:00:01 smc kern.debug kernel: [   13.436715] dc_12v: could not add device link regulator.2: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   13.436787] vcc3v3_sys: 3300 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   13.437090] reg-fixed-voltage vcc3v3-sys: vcc3v3_sys supplying 3300000uV
-Jan  1 12:00:01 smc kern.debug kernel: [   13.437348] reg-fixed-voltage vcc5v0-sys: Looking up vin-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   13.437366] vcc5v0_sys: supplied by dc_12v
-Jan  1 12:00:01 smc kern.debug kernel: [   13.437392] dc_12v: could not add device link regulator.3: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   13.437473] vcc5v0_sys: 5000 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   13.437751] reg-fixed-voltage vcc5v0-sys: vcc5v0_sys supplying 5000000uV
-Jan  1 12:00:01 smc kern.debug kernel: [   13.438257] vcc5v0_host: no parameters, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   13.438577] reg-fixed-voltage vcc5v0-host-regulator: vcc5v0_host supplying 0uV
-Jan  1 12:00:01 smc kern.debug kernel: [   13.438993] vcc5v0_otg: no parameters, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   13.439298] reg-fixed-voltage vcc5v0-otg-regulator: vcc5v0_otg supplying 0uV
-Jan  1 12:00:01 smc kern.debug kernel: [   13.439678] vcc5v0_hub: no parameters, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   13.439991] reg-fixed-voltage vcc5v0-usbhub-regulator: vcc5v0_hub supplying 0uV
-Jan  1 12:00:01 smc kern.debug kernel: [   13.440216] reg-fixed-voltage pcie30-avdd0v9: Looking up vin-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   13.440235] pcie30_avdd0v9: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   13.440265] vcc3v3_sys: could not add device link regulator.7: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   13.440339] pcie30_avdd0v9: 900 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   13.440688] reg-fixed-voltage pcie30-avdd0v9: pcie30_avdd0v9 supplying 900000uV
-Jan  1 12:00:01 smc kern.debug kernel: [   13.440903] reg-fixed-voltage pcie30-avdd1v8: Looking up vin-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   13.440922] pcie30_avdd1v8: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   13.440948] vcc3v3_sys: could not add device link regulator.8: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   13.441019] pcie30_avdd1v8: 1800 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   13.441313] reg-fixed-voltage pcie30-avdd1v8: pcie30_avdd1v8 supplying 1800000uV
-Jan  1 12:00:01 smc kern.debug kernel: [   13.442081] pcie30_3v3: 100 <--> 3300 mV at 3300 mV, enabled
-Jan  1 12:00:01 smc kern.info kernel: [   13.443166] iommu: Default domain type: Translated 
-Jan  1 12:00:01 smc kern.debug kernel: [   13.443604] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up vpu-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   13.443642] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up vpu-supply property in node /power-management@fdd90000/power-controller failed
-Jan  1 12:00:01 smc kern.debug kernel: [   13.444689] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rga-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   13.444726] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rga-supply property in node /power-management@fdd90000/power-controller failed
-Jan  1 12:00:01 smc kern.debug kernel: [   13.446577] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rkvenc-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   13.446614] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rkvenc-supply property in node /power-management@fdd90000/power-controller failed
-Jan  1 12:00:01 smc kern.debug kernel: [   13.447354] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rkvdec-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   13.447391] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rkvdec-supply property in node /power-management@fdd90000/power-controller failed
-Jan  1 12:00:01 smc kern.debug kernel: [   13.447993] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up vi-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   13.448028] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up vi-supply property in node /power-management@fdd90000/power-controller failed
-Jan  1 12:00:01 smc kern.notice kernel: [   13.450049] SCSI subsystem initialized
-Jan  1 12:00:01 smc kern.debug kernel: [   13.450148] libata version 3.00 loaded.
-Jan  1 12:00:01 smc kern.info kernel: [   13.450454] usbcore: registered new interface driver usbfs
-Jan  1 12:00:01 smc kern.info kernel: [   13.450542] usbcore: registered new interface driver hub
-Jan  1 12:00:01 smc kern.info kernel: [   13.450668] usbcore: registered new device driver usb
-Jan  1 12:00:01 smc kern.info kernel: [   13.450860] mc: Linux media interface: v0.10
-Jan  1 12:00:01 smc kern.info kernel: [   13.450935] videodev: Linux video capture interface: v2.00
-Jan  1 12:00:01 smc kern.info kernel: [   13.451072] pps_core: LinuxPPS API ver. 1 registered
-Jan  1 12:00:01 smc kern.info kernel: [   13.451091] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
-Jan  1 12:00:01 smc kern.info kernel: [   13.451137] PTP clock support registered
-Jan  1 12:00:01 smc kern.info kernel: [   13.452384] arm-scmi firmware:scmi: SCMI Notifications - Core Enabled.
-Jan  1 12:00:01 smc kern.info kernel: [   13.452493] arm-scmi firmware:scmi: SCMI Protocol v2.0 'rockchip:' Firmware version 0x0
-Jan  1 12:00:01 smc kern.info kernel: [   13.456146] Advanced Linux Sound Architecture Driver Initialized.
-Jan  1 12:00:01 smc kern.info kernel: [   13.457875] rockchip-cpuinfo cpuinfo: SoC              : 35682000
-Jan  1 12:00:01 smc kern.info kernel: [   13.457909] rockchip-cpuinfo cpuinfo: Serial           : 3045a006a70d95ef
-Jan  1 12:00:01 smc kern.info kernel: [   13.458024] rockchip-cpuinfo cpuinfo: soc_is_rk3566t: 00000000
-Jan  1 12:00:01 smc kern.info kernel: [   13.459306] clocksource: Switched to clocksource arch_sys_counter
-Jan  1 12:00:01 smc kern.notice kernel: [   14.452503] VFS: Disk quotas dquot_6.6.0
-Jan  1 12:00:01 smc kern.info kernel: [   14.452712] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
-Jan  1 12:00:01 smc kern.info kernel: [   14.470513] NET: Registered protocol family 2
-Jan  1 12:00:01 smc kern.info kernel: [   14.470848] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
-Jan  1 12:00:01 smc kern.info kernel: [   14.473837] tcp_listen_portaddr_hash hash table entries: 1024 (order: 3, 40960 bytes, linear)
-Jan  1 12:00:01 smc kern.info kernel: [   14.474038] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
-Jan  1 12:00:01 smc kern.info kernel: [   14.474199] TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
-Jan  1 12:00:01 smc kern.info kernel: [   14.474711] TCP: Hash tables configured (established 16384 bind 16384)
-Jan  1 12:00:01 smc kern.info kernel: [   14.475128] MPTCP token hash table entries: 2048 (order: 4, 98304 bytes, linear)
-Jan  1 12:00:01 smc kern.info kernel: [   14.475294] UDP hash table entries: 1024 (order: 4, 98304 bytes, linear)
-Jan  1 12:00:01 smc kern.info kernel: [   14.475430] UDP-Lite hash table entries: 1024 (order: 4, 98304 bytes, linear)
-Jan  1 12:00:01 smc kern.info kernel: [   14.475843] NET: Registered protocol family 1
-Jan  1 12:00:01 smc kern.info kernel: [   14.476867] RPC: Registered named UNIX socket transport module.
-Jan  1 12:00:01 smc kern.info kernel: [   14.476888] RPC: Registered udp transport module.
-Jan  1 12:00:01 smc kern.info kernel: [   14.476903] RPC: Registered tcp transport module.
-Jan  1 12:00:01 smc kern.info kernel: [   14.476915] RPC: Registered tcp NFSv4.1 backchannel transport module.
-Jan  1 12:00:01 smc kern.info kernel: [   14.478566] PCI: CLS 0 bytes, default 64
-Jan  1 12:00:01 smc kern.info kernel: [   14.482298] rockchip-thermal fe710000.tsadc: tsadc is probed successfully!
-Jan  1 12:00:01 smc kern.info kernel: [   14.484128] hw perfevents: enabled with armv8_cortex_a55 PMU driver, 7 counters available
-Jan  1 12:00:01 smc kern.info kernel: [   14.485763] kvm [1]: IPA Size Limit: 40 bits
-Jan  1 12:00:01 smc kern.info kernel: [   14.485821] kvm [1]: GICv3: no GICV resource entry
-Jan  1 12:00:01 smc kern.info kernel: [   14.485839] kvm [1]: disabling GICv2 emulation
-Jan  1 12:00:01 smc kern.info kernel: [   14.485854] kvm [1]: GIC system register CPU interface enabled
-Jan  1 12:00:01 smc kern.info kernel: [   14.486140] kvm [1]: vgic interrupt IRQ9
-Jan  1 12:00:01 smc kern.info kernel: [   14.486494] kvm [1]: VHE mode initialized successfully
-Jan  1 12:00:01 smc kern.notice kernel: [   14.493850] Initialise system trusted keyrings
-Jan  1 12:00:01 smc kern.info kernel: [   14.494242] workingset: timestamp_bits=46 max_order=19 bucket_order=0
-Jan  1 12:00:01 smc kern.notice kernel: [   14.506019] NFS: Registering the id_resolver key type
-Jan  1 12:00:01 smc kern.notice kernel: [   14.506136] Key type id_resolver registered
-Jan  1 12:00:01 smc kern.notice kernel: [   14.506154] Key type id_legacy registered
-Jan  1 12:00:01 smc kern.info kernel: [   14.506322] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
-Jan  1 12:00:01 smc kern.info kernel: [   14.506343] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
-Jan  1 12:00:01 smc kern.info kernel: [   14.506395] ntfs: driver 2.1.32 [Flags: R/W].
-Jan  1 12:00:01 smc kern.info kernel: [   14.508564] NET: Registered protocol family 38
-Jan  1 12:00:01 smc kern.notice kernel: [   14.508597] Key type asymmetric registered
-Jan  1 12:00:01 smc kern.notice kernel: [   14.508613] Asymmetric key parser 'x509' registered
-Jan  1 12:00:01 smc kern.info kernel: [   14.508680] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
-Jan  1 12:00:01 smc kern.info kernel: [   14.508701] io scheduler mq-deadline registered
-Jan  1 12:00:01 smc kern.info kernel: [   14.508732] io scheduler kyber registered
-Jan  1 12:00:01 smc kern.debug kernel: [   14.513811] phy phy-fe8a0000.usb2-phy.0: Looking up phy-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   14.513851] vcc5v0_host: could not add device link phy-fe8a0000.usb2-phy.0: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   14.514158] phy phy-fe8a0000.usb2-phy.1: Looking up phy-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   14.514181] phy phy-fe8a0000.usb2-phy.1: Looking up phy-supply property in node /usb2-phy@fe8a0000/otg-port failed
-Jan  1 12:00:01 smc kern.debug kernel: [   14.514343] phy phy-fe8a0000.usb2-phy.1: Looking up vbus-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   14.517068] phy phy-fe8b0000.usb2-phy.2: Looking up phy-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   14.517111] vcc5v0_host: could not add device link phy-fe8b0000.usb2-phy.2: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   14.517432] phy phy-fe8b0000.usb2-phy.3: Looking up phy-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   14.517459] vcc5v0_host: could not add device link phy-fe8b0000.usb2-phy.3: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   14.517730] phy phy-fe8b0000.usb2-phy.3: Looking up vbus-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   14.517752] phy phy-fe8b0000.usb2-phy.3: Looking up vbus-supply property in node /usb2-phy@fe8b0000/otg-port failed
-Jan  1 12:00:01 smc kern.debug kernel: [   14.521947] phy phy-fe820000.phy.4: Looking up phy-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   14.521975] phy phy-fe820000.phy.4: Looking up phy-supply property in node /phy@fe820000 failed
-Jan  1 12:00:01 smc kern.debug kernel: [   14.522760] phy phy-fe830000.phy.5: Looking up phy-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   14.522783] phy phy-fe830000.phy.5: Looking up phy-supply property in node /phy@fe830000 failed
-Jan  1 12:00:01 smc kern.debug kernel: [   14.523386] phy phy-fe840000.phy.6: Looking up phy-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   14.523409] phy phy-fe840000.phy.6: Looking up phy-supply property in node /phy@fe840000 failed
-Jan  1 12:00:01 smc kern.info kernel: [   14.526219] rockchip-snps-pcie3-phy fe8c0000.phy: failed to find rockchip,pipe_grf regmap
-Jan  1 12:00:01 smc kern.debug kernel: [   14.526307] phy phy-fe8c0000.phy.7: Looking up phy-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   14.526329] phy phy-fe8c0000.phy.7: Looking up phy-supply property in node /phy@fe8c0000 failed
-Jan  1 12:00:01 smc kern.info kernel: [   14.531495] rk-pcie 3c0000000.pcie: invalid prsnt-gpios property in node
-Jan  1 12:00:01 smc kern.debug kernel: [   14.531561] rk-pcie 3c0000000.pcie: Looking up vpcie3v3-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   14.532537] rk-pcie 3c0800000.pcie: invalid prsnt-gpios property in node
-Jan  1 12:00:01 smc kern.debug kernel: [   14.532599] rk-pcie 3c0800000.pcie: Looking up vpcie3v3-supply from device tree
-Jan  1 12:00:01 smc kern.err kernel: [   14.533136] rk-pcie 3c0000000.pcie: IRQ msi not found
-Jan  1 12:00:01 smc kern.info kernel: [   14.533164] rk-pcie 3c0000000.pcie: use outband MSI support
-Jan  1 12:00:01 smc kern.err kernel: [   14.533181] rk-pcie 3c0000000.pcie: Missing *config* reg space
-Jan  1 12:00:01 smc kern.info kernel: [   14.533215] rk-pcie 3c0000000.pcie: host bridge /pcie@fe260000 ranges:
-Jan  1 12:00:01 smc kern.info kernel: [   14.533278] rk-pcie 3c0000000.pcie:      err 0x00f4000000..0x00f40fffff -> 0x00f4000000
-Jan  1 12:00:01 smc kern.info kernel: [   14.533330] rk-pcie 3c0000000.pcie:       IO 0x00f4100000..0x00f41fffff -> 0x00f4100000
-Jan  1 12:00:01 smc kern.info kernel: [   14.533374] rk-pcie 3c0000000.pcie:      MEM 0x00f4200000..0x00f5ffffff -> 0x00f4200000
-Jan  1 12:00:01 smc kern.info kernel: [   14.533407] rk-pcie 3c0000000.pcie:      MEM 0x0300000000..0x033fffffff -> 0x0300000000
-Jan  1 12:00:01 smc kern.err kernel: [   14.533476] rk-pcie 3c0000000.pcie: Missing *config* reg space
-Jan  1 12:00:01 smc kern.err kernel: [   14.533544] rk-pcie 3c0000000.pcie: invalid resource
-Jan  1 12:00:01 smc kern.info kernel: [   14.533665] mpp_service mpp-srv: 
-Jan  1 12:00:01 smc kern.info kernel: [   14.533689] mpp_service mpp-srv: probe start
-Jan  1 12:00:01 smc kern.info kernel: [   14.537509] mpp_vdpu2 fdea0400.vdpu: Adding to iommu group 0
-Jan  1 12:00:01 smc kern.info kernel: [   14.537843] mpp_vdpu2 fdea0400.vdpu: probe device
-Jan  1 12:00:01 smc kern.info kernel: [   14.538830] mpp_vdpu2 fdea0400.vdpu: probing finish
-Jan  1 12:00:01 smc kern.info kernel: [   14.539779] mpp_vepu2 fdee0000.vepu: Adding to iommu group 2
-Jan  1 12:00:01 smc kern.info kernel: [   14.540097] mpp_vepu2 fdee0000.vepu: probing start
-Jan  1 12:00:01 smc kern.info kernel: [   14.540945] mpp_vepu2 fdee0000.vepu: probing finish
-Jan  1 12:00:01 smc kern.info kernel: [   14.541850] mpp-iep2 fdef0000.iep: Adding to iommu group 3
-Jan  1 12:00:01 smc kern.info kernel: [   14.542161] mpp-iep2 fdef0000.iep: probe device
-Jan  1 12:00:01 smc kern.info kernel: [   14.542305] snps pcie3phy FW update! size 8192
-Jan  1 12:00:01 smc kern.err kernel: [   14.542712] mpp-iep2 fdef0000.iep: allocate roi buffer failed
-Jan  1 12:00:01 smc kern.info kernel: [   14.543130] mpp-iep2 fdef0000.iep: probing finish
-Jan  1 12:00:01 smc kern.info kernel: [   14.543919] mpp_jpgdec fded0000.jpegd: Adding to iommu group 1
-Jan  1 12:00:01 smc kern.info kernel: [   14.544224] mpp_jpgdec fded0000.jpegd: probe device
-Jan  1 12:00:01 smc kern.info kernel: [   14.545071] mpp_jpgdec fded0000.jpegd: probing finish
-Jan  1 12:00:01 smc kern.info kernel: [   14.547535] mpp_service mpp-srv: probe success
-Jan  1 12:00:01 smc kern.info kernel: [   14.555795] dma-pl330 fe530000.dmac: Loaded driver for PL330 DMAC-241330
-Jan  1 12:00:01 smc kern.info kernel: [   14.555855] dma-pl330 fe530000.dmac:   DBUFF-128x8bytes Num_Chans-8 Num_Peri-32 Num_Events-16
-Jan  1 12:00:01 smc kern.err kernel: [   14.556397] rk-pcie 3c0800000.pcie: IRQ msi not found
-Jan  1 12:00:01 smc kern.info kernel: [   14.556422] rk-pcie 3c0800000.pcie: use outband MSI support
-Jan  1 12:00:01 smc kern.err kernel: [   14.556440] rk-pcie 3c0800000.pcie: Missing *config* reg space
-Jan  1 12:00:01 smc kern.info kernel: [   14.556473] rk-pcie 3c0800000.pcie: host bridge /pcie@fe280000 ranges:
-Jan  1 12:00:01 smc kern.info kernel: [   14.556526] rk-pcie 3c0800000.pcie:      err 0x00f0000000..0x00f00fffff -> 0x00f0000000
-Jan  1 12:00:01 smc kern.info kernel: [   14.556563] rk-pcie 3c0800000.pcie:       IO 0x00f0100000..0x00f01fffff -> 0x00f0100000
-Jan  1 12:00:01 smc kern.info kernel: [   14.556601] rk-pcie 3c0800000.pcie:      MEM 0x00f0200000..0x00f1ffffff -> 0x00f0200000
-Jan  1 12:00:01 smc kern.info kernel: [   14.556629] rk-pcie 3c0800000.pcie:      MEM 0x0380000000..0x03bfffffff -> 0x0380000000
-Jan  1 12:00:01 smc kern.err kernel: [   14.556699] rk-pcie 3c0800000.pcie: Missing *config* reg space
-Jan  1 12:00:01 smc kern.err kernel: [   14.556763] rk-pcie 3c0800000.pcie: invalid resource
-Jan  1 12:00:01 smc kern.info kernel: [   14.559750] dma-pl330 fe550000.dmac: Loaded driver for PL330 DMAC-241330
-Jan  1 12:00:01 smc kern.info kernel: [   14.559780] dma-pl330 fe550000.dmac:   DBUFF-128x8bytes Num_Chans-8 Num_Peri-32 Num_Events-16
-Jan  1 12:00:01 smc kern.info kernel: [   14.560661] rockchip-pvtm fde00000.pvtm: pvtm@0 probed
-Jan  1 12:00:01 smc kern.info kernel: [   14.560943] rockchip-pvtm fde80000.pvtm: pvtm@1 probed
-Jan  1 12:00:01 smc kern.info kernel: [   14.561182] rockchip-pvtm fde90000.pvtm: pvtm@2 probed
-Jan  1 12:00:01 smc kern.info kernel: [   14.562601] rockchip-system-monitor rockchip-system-monitor: system monitor probe
-Jan  1 12:00:01 smc kern.err kernel: [   14.563883] arm-scmi firmware:scmi: Failed. SCMI protocol 22 not active.
-Jan  1 12:00:01 smc kern.info kernel: [   14.564324] Serial: 8250/16550 driver, 10 ports, IRQ sharing disabled
-Jan  1 12:00:01 smc kern.info kernel: [   14.566195] fe650000.serial: ttyS1 at MMIO 0xfe650000 (irq = 71, base_baud = 1500000) is a 16550A
-Jan  1 12:00:01 smc kern.info kernel: [   14.566527] serial serial0: tty port ttyS1 registered
-Jan  1 12:00:01 smc kern.notice kernel: [   14.570620] random: crng init done
-Jan  1 12:00:01 smc kern.info kernel: [   14.571823] rockchip-vop2 fe040000.vop: Adding to iommu group 7
-Jan  1 12:00:01 smc kern.warn kernel: [   14.586116] [drm] all windows should be assigned, full plane mask: 0x3f, current plane mask: 0x0
-Jan  1 12:00:01 smc kern.warn kernel: [   14.586177] [drm] use default plane mask
-Jan  1 12:00:01 smc kern.info kernel: [   14.586553] rockchip-vop2 fe040000.vop: [drm:vop2_bind] vp0 assign plane mask: 0x3f, primary plane phy id: 4
-Jan  1 12:00:01 smc kern.info kernel: [   14.586579] rockchip-vop2 fe040000.vop: [drm:vop2_bind] vp1 assign plane mask: 0x0, primary plane phy id: -1
-Jan  1 12:00:01 smc kern.info kernel: [   14.586601] rockchip-vop2 fe040000.vop: [drm:vop2_bind] vp2 assign plane mask: 0x0, primary plane phy id: -1
-Jan  1 12:00:01 smc kern.warn kernel: [   14.587054] [drm] failed to init overlay plane Cluster0-win1
-Jan  1 12:00:01 smc kern.warn kernel: [   14.587156] [drm] failed to init overlay plane Cluster1-win1
-Jan  1 12:00:01 smc kern.info kernel: [   14.587310] rockchip-drm display-subsystem: bound fe040000.vop (ops 0xffffffc008f80fb0)
-Jan  1 12:00:01 smc kern.info kernel: [   14.587786] dwhdmi-rockchip fe0a0000.hdmi: Detected HDMI TX controller v2.11a with HDCP (DWC HDMI 2.0 TX PHY)
-Jan  1 12:00:01 smc kern.info kernel: [   14.588812] dwhdmi-rockchip fe0a0000.hdmi: registered DesignWare HDMI I2C bus driver
-Jan  1 12:00:01 smc kern.err kernel: [   14.589188] dwhdmi-rockchip fe0a0000.hdmi: IRQ index 1 not found
-Jan  1 12:00:01 smc kern.info kernel: [   14.589963] rockchip-drm display-subsystem: bound fe0a0000.hdmi (ops 0xffffffc008f8f128)
-Jan  1 12:00:01 smc kern.warn kernel: [   14.590536] rockchip-drm display-subsystem: failed to parse loader memory
-Jan  1 12:00:01 smc kern.info kernel: [   14.590713] rockchip-drm display-subsystem: [drm] Cannot find any crtc or sizes
-Jan  1 12:00:01 smc kern.info kernel: [   14.590878] rockchip-drm display-subsystem: [drm] Cannot find any crtc or sizes
-Jan  1 12:00:01 smc kern.info kernel: [   14.592261] [drm] Initialized rockchip 3.0.0 20140818 for display-subsystem on minor 0
-Jan  1 12:00:01 smc kern.err kernel: [   14.592952] no ATF memory for init
-Jan  1 12:00:01 smc kern.info kernel: [   14.602333] input: hdmi_cec_key as /devices/platform/fe0a0000.hdmi/dw-hdmi-cec.1.auto/input/input0
-Jan  1 12:00:01 smc kern.warn kernel: [   14.604151] cacheinfo: Unable to detect cache hierarchy for CPU 0
-Jan  1 12:00:01 smc kern.info kernel: [   14.605365] brd: module loaded
-Jan  1 12:00:01 smc kern.info kernel: [   14.615860] loop: module loaded
-Jan  1 12:00:01 smc kern.info kernel: [   14.616693] zram: Added device: zram0
-Jan  1 12:00:01 smc kern.info kernel: [   14.617176] lkdtm: No crash points registered, enable through debugfs
-Jan  1 12:00:01 smc kern.err kernel: [   14.618560] no ATF memory for init
-Jan  1 12:00:01 smc kern.info kernel: [   14.625886] spi-nor spi4.0: w25q128jwm (16384 Kbytes) read_data x4
-Jan  1 12:00:01 smc kern.info kernel: [   14.631990] rk_gmac-dwmac fe010000.ethernet: IRQ eth_lpi not found
-Jan  1 12:00:01 smc kern.debug kernel: [   14.632420] rk_gmac-dwmac fe010000.ethernet: Looking up phy-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   14.632455] rk_gmac-dwmac fe010000.ethernet: Looking up phy-supply property in node /ethernet@fe010000 failed
-Jan  1 12:00:01 smc kern.err kernel: [   14.632488] rk_gmac-dwmac fe010000.ethernet: no regulator found
-Jan  1 12:00:01 smc kern.info kernel: [   14.632513] rk_gmac-dwmac fe010000.ethernet: clock input or output? (output).
-Jan  1 12:00:01 smc kern.info kernel: [   14.632532] rk_gmac-dwmac fe010000.ethernet: TX delay(0x42).
-Jan  1 12:00:01 smc kern.info kernel: [   14.632550] rk_gmac-dwmac fe010000.ethernet: RX delay(0x28).
-Jan  1 12:00:01 smc kern.info kernel: [   14.632577] rk_gmac-dwmac fe010000.ethernet: integrated PHY? (no).
-Jan  1 12:00:01 smc kern.info kernel: [   14.632952] rk_gmac-dwmac fe010000.ethernet: init for RGMII
-Jan  1 12:00:01 smc kern.info kernel: [   14.633369] rk_gmac-dwmac fe010000.ethernet: User ID: 0x30, Synopsys ID: 0x51
-Jan  1 12:00:01 smc kern.info kernel: [   14.633397] rk_gmac-dwmac fe010000.ethernet:   DWMAC4/5
-Jan  1 12:00:01 smc kern.info kernel: [   14.633416] rk_gmac-dwmac fe010000.ethernet: DMA HW capability register supported
-Jan  1 12:00:01 smc kern.info kernel: [   14.633433] rk_gmac-dwmac fe010000.ethernet: RX Checksum Offload Engine supported
-Jan  1 12:00:01 smc kern.info kernel: [   14.633447] rk_gmac-dwmac fe010000.ethernet: TX Checksum insertion supported
-Jan  1 12:00:01 smc kern.info kernel: [   14.633461] rk_gmac-dwmac fe010000.ethernet: Wake-Up On Lan supported
-Jan  1 12:00:01 smc kern.info kernel: [   14.633574] rk_gmac-dwmac fe010000.ethernet: TSO supported
-Jan  1 12:00:01 smc kern.info kernel: [   14.633593] rk_gmac-dwmac fe010000.ethernet: Enable RX Mitigation via HW Watchdog Timer
-Jan  1 12:00:01 smc kern.info kernel: [   14.633612] rk_gmac-dwmac fe010000.ethernet: TSO feature enabled
-Jan  1 12:00:01 smc kern.info kernel: [   14.633629] rk_gmac-dwmac fe010000.ethernet: Using 32 bits DMA width
-Jan  1 12:00:01 smc kern.info kernel: [   14.740495] rk-pcie 3c0000000.pcie: PCIe Linking... LTSSM is 0x3
-Jan  1 12:00:01 smc kern.info kernel: [   14.763822] rk-pcie 3c0800000.pcie: PCIe Linking... LTSSM is 0x0
-Jan  1 12:00:01 smc kern.info kernel: [   14.769372] rk-pcie 3c0000000.pcie: PCIe Linking... LTSSM is 0x3
-Jan  1 12:00:01 smc kern.info kernel: [   14.771108] usbcore: registered new interface driver rndis_wlan
-Jan  1 12:00:01 smc kern.info kernel: [   14.771215] usbcore: registered new interface driver asix
-Jan  1 12:00:01 smc kern.info kernel: [   14.771300] usbcore: registered new interface driver cdc_ether
-Jan  1 12:00:01 smc kern.info kernel: [   14.771387] usbcore: registered new interface driver rndis_host
-Jan  1 12:00:01 smc kern.info kernel: [   14.771478] usbcore: registered new interface driver cdc_ncm
-Jan  1 12:00:01 smc kern.warn kernel: [   14.780559] naneng-combphy fe830000.phy: wait phy status ready timeout
-Jan  1 12:00:01 smc kern.info kernel: [   14.785850] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
-Jan  1 12:00:01 smc kern.info kernel: [   14.785936] ehci-pci: EHCI PCI platform driver
-Jan  1 12:00:01 smc kern.info kernel: [   14.786106] ehci-platform: EHCI generic platform driver
-Jan  1 12:00:01 smc kern.info kernel: [   14.786786] phy phy-fe8b0000.usb2-phy.3: illegal mode
-Jan  1 12:00:01 smc kern.info kernel: [   14.788874] ehci-platform fd800000.usb: EHCI Host Controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.788946] ehci-platform fd800000.usb: new USB bus registered, assigned bus number 1
-Jan  1 12:00:01 smc kern.info kernel: [   14.789157] ehci-platform fd800000.usb: irq 19, io mem 0xfd800000
-Jan  1 12:00:01 smc kern.info kernel: [   14.789334] rk-pcie 3c0800000.pcie: PCIe Linking... LTSSM is 0x0
-Jan  1 12:00:01 smc kern.info kernel: [   14.796011] rk-pcie 3c0000000.pcie: PCIe Linking... LTSSM is 0x3
-Jan  1 12:00:01 smc kern.info kernel: [   14.799363] ehci-platform fd800000.usb: USB 2.0 started, EHCI 1.00
-Jan  1 12:00:01 smc kern.info kernel: [   14.799871] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
-Jan  1 12:00:01 smc kern.info kernel: [   14.799896] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
-Jan  1 12:00:01 smc kern.info kernel: [   14.799913] usb usb1: Product: EHCI Host Controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.799928] usb usb1: Manufacturer: Linux 5.10.160 ehci_hcd
-Jan  1 12:00:01 smc kern.info kernel: [   14.799943] usb usb1: SerialNumber: fd800000.usb
-Jan  1 12:00:01 smc kern.info kernel: [   14.800834] hub 1-0:1.0: USB hub found
-Jan  1 12:00:01 smc kern.info kernel: [   14.800919] hub 1-0:1.0: 1 port detected
-Jan  1 12:00:01 smc kern.info kernel: [   14.804248] ehci-platform fd880000.usb: EHCI Host Controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.804318] ehci-platform fd880000.usb: new USB bus registered, assigned bus number 2
-Jan  1 12:00:01 smc kern.info kernel: [   14.804528] ehci-platform fd880000.usb: irq 21, io mem 0xfd880000
-Jan  1 12:00:01 smc kern.info kernel: [   14.816022] ehci-platform fd880000.usb: USB 2.0 started, EHCI 1.00
-Jan  1 12:00:01 smc kern.info kernel: [   14.816031] rk-pcie 3c0800000.pcie: PCIe Linking... LTSSM is 0x0
-Jan  1 12:00:01 smc kern.info kernel: [   14.816502] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
-Jan  1 12:00:01 smc kern.info kernel: [   14.816527] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
-Jan  1 12:00:01 smc kern.info kernel: [   14.816545] usb usb2: Product: EHCI Host Controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.816561] usb usb2: Manufacturer: Linux 5.10.160 ehci_hcd
-Jan  1 12:00:01 smc kern.info kernel: [   14.816576] usb usb2: SerialNumber: fd880000.usb
-Jan  1 12:00:01 smc kern.info kernel: [   14.817372] hub 2-0:1.0: USB hub found
-Jan  1 12:00:01 smc kern.info kernel: [   14.817457] hub 2-0:1.0: 1 port detected
-Jan  1 12:00:01 smc kern.info kernel: [   14.818737] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
-Jan  1 12:00:01 smc kern.info kernel: [   14.818787] ohci-platform: OHCI generic platform driver
-Jan  1 12:00:01 smc kern.info kernel: [   14.819362] phy phy-fe8b0000.usb2-phy.3: illegal mode
-Jan  1 12:00:01 smc kern.info kernel: [   14.819394] ohci-platform fd840000.usb: Generic Platform OHCI controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.819436] ohci-platform fd840000.usb: new USB bus registered, assigned bus number 3
-Jan  1 12:00:01 smc kern.info kernel: [   14.819640] ohci-platform fd840000.usb: irq 20, io mem 0xfd840000
-Jan  1 12:00:01 smc kern.info kernel: [   14.822666] rk-pcie 3c0000000.pcie: PCIe Linking... LTSSM is 0x3
-Jan  1 12:00:01 smc kern.info kernel: [   14.842686] rk-pcie 3c0800000.pcie: PCIe Linking... LTSSM is 0x0
-Jan  1 12:00:01 smc kern.info kernel: [   14.849349] rk-pcie 3c0000000.pcie: PCIe Linking... LTSSM is 0x3
-Jan  1 12:00:01 smc kern.info kernel: [   14.869348] rk-pcie 3c0800000.pcie: PCIe Linking... LTSSM is 0x0
-Jan  1 12:00:01 smc kern.info kernel: [   14.880364] usb usb3: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
-Jan  1 12:00:01 smc kern.info kernel: [   14.880406] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
-Jan  1 12:00:01 smc kern.info kernel: [   14.880425] usb usb3: Product: Generic Platform OHCI controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.880442] usb usb3: Manufacturer: Linux 5.10.160 ohci_hcd
-Jan  1 12:00:01 smc kern.info kernel: [   14.880457] usb usb3: SerialNumber: fd840000.usb
-Jan  1 12:00:01 smc kern.info kernel: [   14.881268] hub 3-0:1.0: USB hub found
-Jan  1 12:00:01 smc kern.info kernel: [   14.881355] hub 3-0:1.0: 1 port detected
-Jan  1 12:00:01 smc kern.info kernel: [   14.882397] ohci-platform fd8c0000.usb: Generic Platform OHCI controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.882443] ohci-platform fd8c0000.usb: new USB bus registered, assigned bus number 4
-Jan  1 12:00:01 smc kern.info kernel: [   14.883147] ohci-platform fd8c0000.usb: irq 22, io mem 0xfd8c0000
-Jan  1 12:00:01 smc kern.info kernel: [   14.943710] usb usb4: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
-Jan  1 12:00:01 smc kern.info kernel: [   14.943752] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
-Jan  1 12:00:01 smc kern.info kernel: [   14.943772] usb usb4: Product: Generic Platform OHCI controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.943790] usb usb4: Manufacturer: Linux 5.10.160 ohci_hcd
-Jan  1 12:00:01 smc kern.info kernel: [   14.943805] usb usb4: SerialNumber: fd8c0000.usb
-Jan  1 12:00:01 smc kern.info kernel: [   14.944615] hub 4-0:1.0: USB hub found
-Jan  1 12:00:01 smc kern.info kernel: [   14.944700] hub 4-0:1.0: 1 port detected
-Jan  1 12:00:01 smc kern.info kernel: [   14.946879] xhci-hcd xhci-hcd.4.auto: xHCI Host Controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.946946] xhci-hcd xhci-hcd.4.auto: new USB bus registered, assigned bus number 5
-Jan  1 12:00:01 smc kern.info kernel: [   14.947163] xhci-hcd xhci-hcd.4.auto: hcc params 0x0220fe64 hci version 0x110 quirks 0x0000200002010010
-Jan  1 12:00:01 smc kern.info kernel: [   14.947275] xhci-hcd xhci-hcd.4.auto: irq 84, io mem 0xfd000000
-Jan  1 12:00:01 smc kern.info kernel: [   14.947921] usb usb5: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
-Jan  1 12:00:01 smc kern.info kernel: [   14.947947] usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
-Jan  1 12:00:01 smc kern.info kernel: [   14.947964] usb usb5: Product: xHCI Host Controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.947980] usb usb5: Manufacturer: Linux 5.10.160 xhci-hcd
-Jan  1 12:00:01 smc kern.info kernel: [   14.947994] usb usb5: SerialNumber: xhci-hcd.4.auto
-Jan  1 12:00:01 smc kern.info kernel: [   14.948864] hub 5-0:1.0: USB hub found
-Jan  1 12:00:01 smc kern.info kernel: [   14.948951] hub 5-0:1.0: 1 port detected
-Jan  1 12:00:01 smc kern.info kernel: [   14.949625] xhci-hcd xhci-hcd.4.auto: xHCI Host Controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.949671] xhci-hcd xhci-hcd.4.auto: new USB bus registered, assigned bus number 6
-Jan  1 12:00:01 smc kern.info kernel: [   14.949704] xhci-hcd xhci-hcd.4.auto: Host supports USB 3.0 SuperSpeed
-Jan  1 12:00:01 smc kern.info kernel: [   14.949871] usb usb6: We don't know the algorithms for LPM for this host, disabling LPM.
-Jan  1 12:00:01 smc kern.info kernel: [   14.950174] usb usb6: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.10
-Jan  1 12:00:01 smc kern.info kernel: [   14.950200] usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
-Jan  1 12:00:01 smc kern.info kernel: [   14.950218] usb usb6: Product: xHCI Host Controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.950234] usb usb6: Manufacturer: Linux 5.10.160 xhci-hcd
-Jan  1 12:00:01 smc kern.info kernel: [   14.950248] usb usb6: SerialNumber: xhci-hcd.4.auto
-Jan  1 12:00:01 smc kern.info kernel: [   14.951021] hub 6-0:1.0: USB hub found
-Jan  1 12:00:01 smc kern.info kernel: [   14.951103] hub 6-0:1.0: 1 port detected
-Jan  1 12:00:01 smc kern.info kernel: [   14.952020] xhci-hcd xhci-hcd.5.auto: xHCI Host Controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.952068] xhci-hcd xhci-hcd.5.auto: new USB bus registered, assigned bus number 7
-Jan  1 12:00:01 smc kern.info kernel: [   14.952309] xhci-hcd xhci-hcd.5.auto: hcc params 0x0220fe64 hci version 0x110 quirks 0x0000202002010010
-Jan  1 12:00:01 smc kern.info kernel: [   14.952409] xhci-hcd xhci-hcd.5.auto: irq 83, io mem 0xfcc00000
-Jan  1 12:00:01 smc kern.info kernel: [   14.953112] usb usb7: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
-Jan  1 12:00:01 smc kern.info kernel: [   14.953139] usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
-Jan  1 12:00:01 smc kern.info kernel: [   14.953157] usb usb7: Product: xHCI Host Controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.953173] usb usb7: Manufacturer: Linux 5.10.160 xhci-hcd
-Jan  1 12:00:01 smc kern.info kernel: [   14.953188] usb usb7: SerialNumber: xhci-hcd.5.auto
-Jan  1 12:00:01 smc kern.info kernel: [   14.953985] hub 7-0:1.0: USB hub found
-Jan  1 12:00:01 smc kern.info kernel: [   14.954072] hub 7-0:1.0: 1 port detected
-Jan  1 12:00:01 smc kern.info kernel: [   14.954699] xhci-hcd xhci-hcd.5.auto: xHCI Host Controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.954736] xhci-hcd xhci-hcd.5.auto: new USB bus registered, assigned bus number 8
-Jan  1 12:00:01 smc kern.info kernel: [   14.954770] xhci-hcd xhci-hcd.5.auto: Host supports USB 3.0 SuperSpeed
-Jan  1 12:00:01 smc kern.info kernel: [   14.954932] usb usb8: We don't know the algorithms for LPM for this host, disabling LPM.
-Jan  1 12:00:01 smc kern.info kernel: [   14.955220] usb usb8: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.10
-Jan  1 12:00:01 smc kern.info kernel: [   14.955244] usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
-Jan  1 12:00:01 smc kern.info kernel: [   14.955264] usb usb8: Product: xHCI Host Controller
-Jan  1 12:00:01 smc kern.info kernel: [   14.955279] usb usb8: Manufacturer: Linux 5.10.160 xhci-hcd
-Jan  1 12:00:01 smc kern.info kernel: [   14.955293] usb usb8: SerialNumber: xhci-hcd.5.auto
-Jan  1 12:00:01 smc kern.info kernel: [   14.956109] hub 8-0:1.0: USB hub found
-Jan  1 12:00:01 smc kern.info kernel: [   14.956194] hub 8-0:1.0: 1 port detected
-Jan  1 12:00:01 smc kern.info kernel: [   14.957093] usbcore: registered new interface driver cdc_acm
-Jan  1 12:00:01 smc kern.info kernel: [   14.957115] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
-Jan  1 12:00:01 smc kern.info kernel: [   14.957653] usbcore: registered new interface driver uas
-Jan  1 12:00:01 smc kern.info kernel: [   14.957899] usbcore: registered new interface driver usb-storage
-Jan  1 12:00:01 smc kern.info kernel: [   14.960651] usbcore: registered new interface driver usbtouchscreen
-Jan  1 12:00:01 smc kern.info kernel: [   14.961710] i2c /dev entries driver
-Jan  1 12:00:01 smc kern.info kernel: [   14.964906] fan53555-regulator 0-001c: FAN53555 Option[12] Rev[15] Detected!
-Jan  1 12:00:01 smc kern.debug kernel: [   14.965452] vdd_cpu: override max_uV, 1390000 -> 1387500
-Jan  1 12:00:01 smc kern.debug kernel: [   14.966900] fan53555-regulator 0-001c: Looking up vin-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   14.967251] vdd_cpu: supplied by vcc5v0_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   14.967286] vcc5v0_sys: could not add device link regulator.10: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   14.970334] vdd_cpu: 712 <--> 1387 mV at 1025 mV, enabled
-Jan  1 12:00:01 smc kern.info kernel: [   14.976058] rk808 0-0020: chip id: 0x8090
-Jan  1 12:00:01 smc kern.warn kernel: [   14.976168] rk808 0-0020: No cache defaults, reading back from HW
-Jan  1 12:00:01 smc kern.info kernel: [   15.000057] rk808 0-0020: source: on=0x40, off=0x00
-Jan  1 12:00:01 smc kern.info kernel: [   15.000106] rk808 0-0020: support dcdc3 fb mode:-22, 1
-Jan  1 12:00:01 smc kern.info kernel: [   15.000130] rk808 0-0020: support pmic reset mode:0,0
-Jan  1 12:00:01 smc kern.info kernel: [   15.009782] rk808-regulator rk808-regulator: there is no dvs0 gpio
-Jan  1 12:00:01 smc kern.info kernel: [   15.009872] rk808-regulator rk808-regulator: there is no dvs1 gpio
-Jan  1 12:00:01 smc kern.debug kernel: [   15.009992] rk808 0-0020: Looking up vcc1-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.010018] vdd_logic: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.010046] vcc3v3_sys: could not add device link regulator.11: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.010571] vdd_logic: 500 <--> 1350 mV at 900 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   15.011083] rk808 0-0020: Looking up vcc2-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.011103] vdd_gpu: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.011131] vcc3v3_sys: could not add device link regulator.12: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.011607] vdd_gpu: 500 <--> 1350 mV at 900 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   15.012064] rk808 0-0020: Looking up vcc3-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.012084] vcc_ddr: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.012128] vcc3v3_sys: could not add device link regulator.13: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.012592] vcc_ddr: at 500 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   15.013113] rk808 0-0020: Looking up vcc4-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.013132] vdd_npu: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.013177] vcc3v3_sys: could not add device link regulator.14: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.013647] vdd_npu: 500 <--> 1350 mV at 900 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   15.014114] rk808 0-0020: Looking up vcc9-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.014134] vcc_1v8: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.014179] vcc3v3_sys: could not add device link regulator.15: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.014634] vcc_1v8: 1800 mV, enabled
-Jan  1 12:00:01 smc kern.info kernel: [   15.015029] vdda0v9_image: Bringing 600000uV into 900000-900000uV
-Jan  1 12:00:01 smc kern.debug kernel: [   15.015450] vdda0v9_image: ramp_delay not set
-Jan  1 12:00:01 smc kern.debug kernel: [   15.015474] rk808 0-0020: Looking up vcc5-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.015493] vdda0v9_image: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.015521] vcc3v3_sys: could not add device link regulator.16: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.016543] vdda0v9_image: 900 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   15.016965] rk808 0-0020: Looking up vcc5-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.016985] vdda_0v9: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.017038] vcc3v3_sys: could not add device link regulator.17: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.018033] vdda_0v9: 900 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   15.018479] rk808 0-0020: Looking up vcc5-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.018499] vdda0v9_pmu: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.018544] vcc3v3_sys: could not add device link regulator.18: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.019543] vdda0v9_pmu: 900 mV, enabled
-Jan  1 12:00:01 smc kern.info kernel: [   15.019967] vccio_acodec: Bringing 3300000uV into 3000000-3000000uV
-Jan  1 12:00:01 smc kern.debug kernel: [   15.020388] vccio_acodec: ramp_delay not set
-Jan  1 12:00:01 smc kern.debug kernel: [   15.020411] rk808 0-0020: Looking up vcc6-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.020427] vccio_acodec: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.020453] vcc3v3_sys: could not add device link regulator.19: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.021449] vccio_acodec: 3000 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   15.021890] rk808 0-0020: Looking up vcc6-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.021909] vccio_sd: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.021953] vcc3v3_sys: could not add device link regulator.20: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.022952] vccio_sd: 1800 <--> 3300 mV at 3300 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   15.023385] rk808 0-0020: Looking up vcc6-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.023405] vcc3v3_pmu: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.023450] vcc3v3_sys: could not add device link regulator.21: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.024467] vcc3v3_pmu: 3300 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   15.024889] rk808 0-0020: Looking up vcc7-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.024907] vcca_1v8: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.024953] vcc3v3_sys: could not add device link regulator.22: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.025944] vcca_1v8: 1800 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   15.026438] rk808 0-0020: Looking up vcc7-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.026457] vcca1v8_pmu: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.026502] vcc3v3_sys: could not add device link regulator.23: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.027495] vcca1v8_pmu: 1800 mV, enabled
-Jan  1 12:00:01 smc kern.info kernel: [   15.027940] vcca1v8_image: Bringing 600000uV into 1800000-1800000uV
-Jan  1 12:00:01 smc kern.debug kernel: [   15.028362] vcca1v8_image: ramp_delay not set
-Jan  1 12:00:01 smc kern.debug kernel: [   15.028386] rk808 0-0020: Looking up vcc7-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.028405] vcca1v8_image: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.028431] vcc3v3_sys: could not add device link regulator.24: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.029426] vcca1v8_image: 1800 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   15.029882] rk808 0-0020: Looking up vcc9-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.029902] vcc_3v3: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.029947] vcc3v3_sys: could not add device link regulator.25: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.030399] vcc_3v3: at 3300 mV, enabled
-Jan  1 12:00:01 smc kern.debug kernel: [   15.030797] rk808 0-0020: Looking up vcc8-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.030816] vcc3v3_sd: supplied by vcc3v3_sys
-Jan  1 12:00:01 smc kern.debug kernel: [   15.030862] vcc3v3_sys: could not add device link regulator.26: -ENOENT
-Jan  1 12:00:01 smc kern.debug kernel: [   15.031313] vcc3v3_sd: at 3300 mV, enabled
-Jan  1 12:00:01 smc kern.warn kernel: [   15.031733] rk817-battery: Failed to locate of_node [id: -1]
-Jan  1 12:00:01 smc kern.err kernel: [   15.032002] rk817-battery rk817-battery: Failed to find matching dt id
-Jan  1 12:00:01 smc kern.warn kernel: [   15.032207] rk817-charger: Failed to locate of_node [id: -1]
-Jan  1 12:00:01 smc kern.err kernel: [   15.032393] rk817-charger rk817-charger: Failed to find matching dt id
-Jan  1 12:00:01 smc kern.info kernel: [   15.036124] input: rk805 pwrkey as /devices/platform/fdd40000.i2c/i2c-0/0-0020/rk805-pwrkey/input/input1
-Jan  1 12:00:01 smc kern.info kernel: [   15.043430] rtc-hym8563 5-0051: rtc information is invalid
-Jan  1 12:00:01 smc kern.info kernel: [   15.049372] usb 1-1: new high-speed USB device number 2 using ehci-platform
-Jan  1 12:00:01 smc kern.info kernel: [   15.050736] rtc-hym8563 5-0051: registered as rtc0
-Jan  1 12:00:01 smc kern.info kernel: [   15.051840] rtc-hym8563 5-0051: setting system clock to 2021-01-01T12:00:00 UTC (1609502400)
-Jan  1 12:00:01 smc kern.info kernel: [   15.057987] rkisp_hw fdff0000.rkisp: Adding to iommu group 6
-Jan  1 12:00:01 smc kern.info kernel: [   15.058388] rkisp_hw fdff0000.rkisp: is_thunderboot: 0
-Jan  1 12:00:01 smc kern.info kernel: [   15.058417] rkisp_hw fdff0000.rkisp: max input:0x0@0fps
-Jan  1 12:00:01 smc kern.err kernel: [   15.058470] rkisp_hw fdff0000.rkisp: can't request region for resource [mem 0xfdff0000-0xfdffffff]
-Jan  1 12:00:01 smc kern.warn kernel: [   15.058856] rkisp_hw fdff0000.rkisp: no find phandle sram
-Jan  1 12:00:01 smc kern.info kernel: [   15.061477] usbcore: registered new interface driver uvcvideo
-Jan  1 12:00:01 smc kern.info kernel: [   15.061523] USB Video Class driver (1.1.1)
-Jan  1 12:00:01 smc kern.info kernel: [   15.064986] cpu cpu0: leakage=24
-Jan  1 12:00:01 smc kern.info kernel: [   15.065154] cpu cpu0: pvtm = 86050, from nvmem
-Jan  1 12:00:01 smc kern.info kernel: [   15.065191] cpu cpu0: pvtm-volt-sel=1
-Jan  1 12:00:01 smc kern.debug kernel: [   15.065651] cpu cpu0: Looking up cpu-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.068170] cpu cpu0: avs=0
-Jan  1 12:00:01 smc kern.debug kernel: [   15.068436] cpu cpu0: EM: OPP:600000 is inefficient
-Jan  1 12:00:01 smc kern.debug kernel: [   15.068448] cpu cpu0: EM: OPP:408000 is inefficient
-Jan  1 12:00:01 smc kern.info kernel: [   15.068809] cpu cpu0: EM: created perf domain
-Jan  1 12:00:01 smc kern.info kernel: [   15.068941] cpu cpu0: l=0 h=2147483647 hyst=5000 l_limit=1800000000 h_limit=0 h_table=0
-Jan  1 12:00:01 smc kern.info kernel: [   15.076914] sdhci: Secure Digital Host Controller Interface driver
-Jan  1 12:00:01 smc kern.info kernel: [   15.076962] sdhci: Copyright(c) Pierre Ossman
-Jan  1 12:00:01 smc kern.info kernel: [   15.076969] Synopsys Designware Multimedia Card Interface Driver
-Jan  1 12:00:01 smc kern.info kernel: [   15.077923] sdhci-pltfm: SDHCI platform and OF driver helper
-Jan  1 12:00:01 smc kern.info kernel: [   15.078424] dwmmc_rockchip fe000000.dwmmc: IDMAC supports 32-bit address mode.
-Jan  1 12:00:01 smc kern.info kernel: [   15.078460] dwmmc_rockchip fe000000.dwmmc: Using internal DMA controller.
-Jan  1 12:00:01 smc kern.info kernel: [   15.078474] dwmmc_rockchip fe000000.dwmmc: Version ID is 270a
-Jan  1 12:00:01 smc kern.info kernel: [   15.078478] dwmmc_rockchip fe2b0000.dwmmc: IDMAC supports 32-bit address mode.
-Jan  1 12:00:01 smc kern.info kernel: [   15.078490] dwmmc_rockchip fe2b0000.dwmmc: Using internal DMA controller.
-Jan  1 12:00:01 smc kern.info kernel: [   15.078505] dwmmc_rockchip fe2b0000.dwmmc: Version ID is 270a
-Jan  1 12:00:01 smc kern.info kernel: [   15.078543] dwmmc_rockchip fe000000.dwmmc: DW MMC controller at irq 48,32 bit host data width,256 deep fifo
-Jan  1 12:00:01 smc kern.info kernel: [   15.078560] dwmmc_rockchip fe2b0000.dwmmc: DW MMC controller at irq 60,32 bit host data width,256 deep fifo
-Jan  1 12:00:01 smc kern.debug kernel: [   15.078650] dwmmc_rockchip fe000000.dwmmc: Looking up vmmc-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   15.078653] dwmmc_rockchip fe2b0000.dwmmc: Looking up vmmc-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   15.078712] dwmmc_rockchip fe000000.dwmmc: Looking up vmmc-supply property in node /dwmmc@fe000000 failed
-Jan  1 12:00:01 smc kern.debug kernel: [   15.078744] dwmmc_rockchip fe000000.dwmmc: Looking up vqmmc-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   15.078754] dwmmc_rockchip fe000000.dwmmc: Looking up vqmmc-supply property in node /dwmmc@fe000000 failed
-Jan  1 12:00:01 smc kern.debug kernel: [   15.078877] dwmmc_rockchip fe2b0000.dwmmc: Looking up vqmmc-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.079054] dwmmc_rockchip fe000000.dwmmc: allocated mmc-pwrseq
-Jan  1 12:00:01 smc kern.info kernel: [   15.079072] mmc_host mmc3: card is non-removable.
-Jan  1 12:00:01 smc kern.debug kernel: [   15.079833] sdhci-dwcmshc fe310000.sdhci: Looking up vmmc-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   15.079850] sdhci-dwcmshc fe310000.sdhci: Looking up vmmc-supply property in node /sdhci@fe310000 failed
-Jan  1 12:00:01 smc kern.debug kernel: [   15.079883] sdhci-dwcmshc fe310000.sdhci: Looking up vqmmc-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   15.079891] sdhci-dwcmshc fe310000.sdhci: Looking up vqmmc-supply property in node /sdhci@fe310000 failed
-Jan  1 12:00:01 smc kern.info kernel: [   15.080162] ledtrig-cpu: registered to indicate activity on CPUs
-Jan  1 12:00:01 smc kern.err kernel: [   15.080207] arm-scmi firmware:scmi: Failed. SCMI protocol 17 not active.
-Jan  1 12:00:01 smc kern.info kernel: [   15.080277] SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
-Jan  1 12:00:01 smc kern.info kernel: [   15.081149] cryptodev: driver 1.12 loaded.
-Jan  1 12:00:01 smc kern.info kernel: [   15.081208] hid: raw HID events driver (C) Jiri Kosina
-Jan  1 12:00:01 smc kern.info kernel: [   15.081482] usbcore: registered new interface driver usbhid
-Jan  1 12:00:01 smc kern.info kernel: [   15.081491] usbhid: USB HID core driver
-Jan  1 12:00:01 smc kern.debug kernel: [   15.084757] rockchip-saradc fe720000.saradc: Looking up vref-supply from device tree
-Jan  1 12:00:01 smc kern.err kernel: [   15.085880] rksfc_base v1.1 2016-01-08
-Jan  1 12:00:01 smc kern.info kernel: [   15.086624] usbcore: registered new interface driver snd-usb-audio
-Jan  1 12:00:01 smc kern.warn kernel: [   15.088383] rk817-codec rk817-codec: DMA mask not set
-Jan  1 12:00:01 smc kern.info kernel: [   15.089793] mmc_host mmc1: Bus speed (slot 0) = 375000Hz (slot req 400000Hz, actual 375000HZ div = 0)
-Jan  1 12:00:01 smc kern.info kernel: [   15.092318] mmc_host mmc3: Bus speed (slot 0) = 375000Hz (slot req 400000Hz, actual 375000HZ div = 0)
-Jan  1 12:00:01 smc kern.warn kernel: [   15.094387] rk-multicodecs rk809-sound: Failed to get ADC channel
-Jan  1 12:00:01 smc kern.err kernel: [   15.094592] rk-multicodecs rk809-sound: ASoC: Property 'rockchip,audio-routing' does not exist or its length is not even
-Jan  1 12:00:01 smc kern.warn kernel: [   15.094603] rk-multicodecs rk809-sound: Audio routing invalid/unspecified
-Jan  1 12:00:01 smc kern.info kernel: [   15.095778] rk817-codec rk817-codec: rk817_probe: chip_name:0x80, chip_ver:0x94
-Jan  1 12:00:01 smc kern.info kernel: [   15.105364] input: rockchip-rk809 Headset as /devices/platform/rk809-sound/sound/card0/input2
-Jan  1 12:00:01 smc kern.info kernel: [   15.106442] Initializing XFRM netlink socket
-Jan  1 12:00:01 smc kern.info kernel: [   15.106483] NET: Registered protocol family 17
-Jan  1 12:00:01 smc kern.info kernel: [   15.106775] [BT_RFKILL]: Enter rfkill_rk_init
-Jan  1 12:00:01 smc kern.info kernel: [   15.106784] [WLAN_RFKILL]: Enter rfkill_wlan_init
-Jan  1 12:00:01 smc kern.info kernel: [   15.106936] mmc0: SDHCI controller on fe310000.sdhci [fe310000.sdhci] using ADMA
-Jan  1 12:00:01 smc kern.info kernel: [   15.107617] [WLAN_RFKILL]: Enter rfkill_wlan_probe
-Jan  1 12:00:01 smc kern.info kernel: [   15.107666] [WLAN_RFKILL]: wlan_platdata_parse_dt: wifi_chip_type = ap6256
-Jan  1 12:00:01 smc kern.info kernel: [   15.107675] [WLAN_RFKILL]: wlan_platdata_parse_dt: enable wifi power control.
-Jan  1 12:00:01 smc kern.info kernel: [   15.107682] [WLAN_RFKILL]: wlan_platdata_parse_dt: wifi power controled by gpio.
-Jan  1 12:00:01 smc kern.info kernel: [   15.107720] [WLAN_RFKILL]: wlan_platdata_parse_dt: WIFI,host_wake_irq = 125, flags = 0.
-Jan  1 12:00:01 smc kern.info kernel: [   15.107744] [WLAN_RFKILL]: rfkill_wlan_probe: init gpio
-Jan  1 12:00:01 smc kern.info kernel: [   15.107753] [WLAN_RFKILL]: rfkill_set_wifi_bt_power: 1
-Jan  1 12:00:01 smc kern.info kernel: [   15.107761] [WLAN_RFKILL]: Exit rfkill_wlan_probe
-Jan  1 12:00:01 smc kern.notice kernel: [   15.108594] Key type dns_resolver registered
-Jan  1 12:00:01 smc kern.info kernel: [   15.109051] flash vendor_init_thread!
-Jan  1 12:00:01 smc kern.info kernel: [   15.109066] flash vendor storage:20170308 ret = -1
-Jan  1 12:00:01 smc kern.info kernel: [   15.110720] registered taskstats version 1
-Jan  1 12:00:01 smc kern.notice kernel: [   15.110747] Loading compiled-in X.509 certificates
-Jan  1 12:00:01 smc kern.info kernel: [   15.111003] pstore: Using crash dump compression: deflate
-Jan  1 12:00:01 smc kern.info kernel: [   15.112476] rga: rga2, irq = 29, match scheduler
-Jan  1 12:00:01 smc kern.info kernel: [   15.113173] rga: rga2 hardware loaded successfully, hw_version:3.2.63318.
-Jan  1 12:00:01 smc kern.info kernel: [   15.113217] rga: rga2 probe successfully
-Jan  1 12:00:01 smc kern.info kernel: [   15.113706] rga_iommu: IOMMU binding successfully, default mapping core[0x4]
-Jan  1 12:00:01 smc kern.info kernel: [   15.114030] rga: Module initialized. v1.2.26
-Jan  1 12:00:01 smc kern.info kernel: [   15.132066] mmc_host mmc3: Bus speed (slot 0) = 375000Hz (slot req 375000Hz, actual 375000HZ div = 0)
-Jan  1 12:00:01 smc kern.info kernel: [   15.157053] mpp_rkvenc fdf40000.rkvenc: Adding to iommu group 4
-Jan  1 12:00:01 smc kern.info kernel: [   15.157388] mpp_rkvenc fdf40000.rkvenc: probing start
-Jan  1 12:00:01 smc kern.debug kernel: [   15.157837] mpp_rkvenc fdf40000.rkvenc: Looking up venc-supply from device tree
-Jan  1 12:00:01 smc kern.err kernel: [   15.158124] mpp_rkvenc fdf40000.rkvenc: Failed to get leakage
-Jan  1 12:00:01 smc kern.info kernel: [   15.158200] mpp_rkvenc fdf40000.rkvenc: pvtm = 86050, from nvmem
-Jan  1 12:00:01 smc kern.info kernel: [   15.158223] mpp_rkvenc fdf40000.rkvenc: pvtm-volt-sel=1
-Jan  1 12:00:01 smc kern.info kernel: [   15.158584] mpp_rkvenc fdf40000.rkvenc: avs=0
-Jan  1 12:00:01 smc kern.err kernel: [   15.158762] mpp_rkvenc fdf40000.rkvenc: failed to find power_model node
-Jan  1 12:00:01 smc kern.err kernel: [   15.158779] mpp_rkvenc fdf40000.rkvenc: failed to initialize power model
-Jan  1 12:00:01 smc kern.err kernel: [   15.158791] mpp_rkvenc fdf40000.rkvenc: failed to get dynamic-coefficient
-Jan  1 12:00:01 smc kern.info kernel: [   15.159610] mpp_rkvenc fdf40000.rkvenc: probing finish
-Jan  1 12:00:01 smc kern.info kernel: [   15.160135] mpp_rkvdec2 fdf80200.rkvdec: Adding to iommu group 5
-Jan  1 12:00:01 smc kern.info kernel: [   15.160446] mpp_rkvdec2 fdf80200.rkvdec: rkvdec, probing start
-Jan  1 12:00:01 smc kern.err kernel: [   15.160935] mpp_rkvdec2 fdf80200.rkvdec: shared_niu_a is not found!
-Jan  1 12:00:01 smc kern.err kernel: [   15.160951] rkvdec2_init:1022: No niu aclk reset resource define
-Jan  1 12:00:01 smc kern.err kernel: [   15.160966] mpp_rkvdec2 fdf80200.rkvdec: shared_niu_h is not found!
-Jan  1 12:00:01 smc kern.err kernel: [   15.160976] rkvdec2_init:1025: No niu hclk reset resource define
-Jan  1 12:00:01 smc kern.debug kernel: [   15.161021] mpp_rkvdec2 fdf80200.rkvdec: Looking up vdec-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.161478] mpp_rkvdec2 fdf80200.rkvdec: leakage=48
-Jan  1 12:00:01 smc kern.info kernel: [   15.161502] mpp_rkvdec2 fdf80200.rkvdec: leakage-volt-sel=0
-Jan  1 12:00:01 smc kern.info kernel: [   15.161554] mpp_rkvdec2 fdf80200.rkvdec: pvtm = 86050, from nvmem
-Jan  1 12:00:01 smc kern.info kernel: [   15.161574] mpp_rkvdec2 fdf80200.rkvdec: pvtm-volt-sel=1
-Jan  1 12:00:01 smc kern.info kernel: [   15.161866] mpp_rkvdec2 fdf80200.rkvdec: avs=0
-Jan  1 12:00:01 smc kern.err kernel: [   15.162036] mpp_rkvdec2 fdf80200.rkvdec: failed to find power_model node
-Jan  1 12:00:01 smc kern.err kernel: [   15.162053] mpp_rkvdec2 fdf80200.rkvdec: failed to initialize power model
-Jan  1 12:00:01 smc kern.err kernel: [   15.162065] mpp_rkvdec2 fdf80200.rkvdec: failed to get dynamic-coefficient
-Jan  1 12:00:01 smc kern.info kernel: [   15.162232] mpp_rkvdec2 fdf80200.rkvdec: sram_start 0x00000000fdcc0000
-Jan  1 12:00:01 smc kern.info kernel: [   15.162248] mpp_rkvdec2 fdf80200.rkvdec: rcb_iova 0x0000000010000000
-Jan  1 12:00:01 smc kern.info kernel: [   15.162260] mpp_rkvdec2 fdf80200.rkvdec: sram_size 45056
-Jan  1 12:00:01 smc kern.info kernel: [   15.162271] mpp_rkvdec2 fdf80200.rkvdec: rcb_size 65536
-Jan  1 12:00:01 smc kern.info kernel: [   15.162283] mpp_rkvdec2 fdf80200.rkvdec: min_width 512
-Jan  1 12:00:01 smc kern.info kernel: [   15.162364] mpp_rkvdec2 fdf80200.rkvdec: link mode probe finish
-Jan  1 12:00:01 smc kern.info kernel: [   15.162473] mpp_rkvdec2 fdf80200.rkvdec: probing finish
-Jan  1 12:00:01 smc kern.debug kernel: [   15.163822] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up gpu-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   15.163951] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up gpu-supply property in node /power-management@fdd90000/power-controller failed
-Jan  1 12:00:01 smc kern.err kernel: [   15.164001] of_clk_hw_onecell_get: invalid index 3
-Jan  1 12:00:01 smc kern.debug kernel: [   15.164032] rockchip-dmc dmc: Looking up center-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.164046] mali fde60000.gpu: Kernel DDK version g17p0-01eac0
-Jan  1 12:00:01 smc kern.err kernel: [   15.164120] mali fde60000.gpu: Insufficient register space, will override to the required size
-Jan  1 12:00:01 smc kern.err kernel: [   15.164147] mali fde60000.gpu: Register window unavailable
-Jan  1 12:00:01 smc kern.err kernel: [   15.164158] mali fde60000.gpu: Failed to map registers
-Jan  1 12:00:01 smc kern.err kernel: [   15.164170] mali fde60000.gpu: Register map failed error = -5
-Jan  1 12:00:01 smc kern.err kernel: [   15.164180] mali fde60000.gpu: Device initialization failed
-Jan  1 12:00:01 smc kern.debug kernel: [   15.164234] rockchip-dmc dmc: Looking up center-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   15.164274] vdd_logic: could not add device link dmc: -EEXIST
-Jan  1 12:00:01 smc kern.warn kernel: [   15.164279] mali: probe of fde60000.gpu failed with error -5
-Jan  1 12:00:01 smc kern.debug kernel: [   15.164294] vdd_logic: Failed to create debugfs directory
-Jan  1 12:00:01 smc kern.err kernel: [   15.164317] of_clk_hw_onecell_get: invalid index 3
-Jan  1 12:00:01 smc kern.err kernel: [   15.164335] rockchip-dmc dmc: Cannot get the clk dmc_clk. If using SCMI, trusted firmware need update to V1.01 and above.
-Jan  1 12:00:01 smc kern.warn kernel: [   15.164538] rockchip-dmc: probe of dmc failed with error -2
-Jan  1 12:00:01 smc kern.debug kernel: [   15.164771] rockchip-iodomain fdc20000.syscon:io-domains: Looking up pmuio1-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   15.164789] rockchip-iodomain fdc20000.syscon:io-domains: Looking up pmuio1-supply property in node /syscon@fdc20000/io-domains failed
-Jan  1 12:00:01 smc kern.debug kernel: [   15.164827] rockchip-iodomain fdc20000.syscon:io-domains: Looking up pmuio2-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.165061] rockchip-iodomain fdc20000.syscon:io-domains: pmuio2(3300000 uV) supplied by vcc3v3_pmu
-Jan  1 12:00:01 smc kern.debug kernel: [   15.165081] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio1-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.165271] rockchip-iodomain fdc20000.syscon:io-domains: vccio1(3000000 uV) supplied by vccio_acodec
-Jan  1 12:00:01 smc kern.debug kernel: [   15.165290] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio2-supply from device tree
-Jan  1 12:00:01 smc kern.debug kernel: [   15.165306] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio2-supply property in node /syscon@fdc20000/io-domains failed
-Jan  1 12:00:01 smc kern.debug kernel: [   15.165337] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio3-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.165536] rockchip-iodomain fdc20000.syscon:io-domains: vccio3(3300000 uV) supplied by vccio_sd
-Jan  1 12:00:01 smc kern.debug kernel: [   15.165555] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio4-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.165768] rockchip-iodomain fdc20000.syscon:io-domains: vccio4(1800000 uV) supplied by vcc_1v8
-Jan  1 12:00:01 smc kern.debug kernel: [   15.165788] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio5-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.166216] rockchip-iodomain fdc20000.syscon:io-domains: vccio5(3300000 uV) supplied by vcc_3v3
-Jan  1 12:00:01 smc kern.debug kernel: [   15.166236] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio6-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.166331] rockchip-iodomain fdc20000.syscon:io-domains: vccio6(1800000 uV) supplied by vcc_1v8
-Jan  1 12:00:01 smc kern.debug kernel: [   15.166349] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio7-supply from device tree
-Jan  1 12:00:01 smc kern.info kernel: [   15.166450] rockchip-iodomain fdc20000.syscon:io-domains: vccio7(3300000 uV) supplied by vcc_3v3
-Jan  1 12:00:01 smc kern.err kernel: [   15.167070] adc_keys adc-keys: keymap is missing
-Jan  1 12:00:01 smc kern.warn kernel: [   15.167101] adc_keys: probe of adc-keys failed with error -22
-Jan  1 12:00:01 smc kern.info kernel: [   15.197101] usb 1-1: New USB device found, idVendor=1a40, idProduct=0101, bcdDevice= 1.11
-Jan  1 12:00:01 smc kern.info kernel: [   15.197144] usb 1-1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
-Jan  1 12:00:01 smc kern.info kernel: [   15.197158] usb 1-1: Product: USB 2.0 Hub
-Jan  1 12:00:01 smc kern.info kernel: [   15.197984] hub 1-1:1.0: USB hub found
-Jan  1 12:00:01 smc kern.info kernel: [   15.198169] hub 1-1:1.0: 4 ports detected
-Jan  1 12:00:01 smc kern.err kernel: [   15.708113] mmc1: delay init for 600 ms to enable UHS mode
-Jan  1 12:00:01 smc kern.notice kernel: [   15.714353] cfg80211: Loading compiled-in X.509 certificates for regulatory database
-Jan  1 12:00:01 smc kern.notice kernel: [   15.716640] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
-Jan  1 12:00:01 smc kern.warn kernel: [   15.717609] rockchip-pm rockchip-suspend: not set pwm-regulator-config
-Jan  1 12:00:01 smc kern.info kernel: [   15.717645] rockchip-suspend not set sleep-mode-config for mem-lite
-Jan  1 12:00:01 smc kern.info kernel: [   15.717654] rockchip-suspend not set wakeup-config for mem-lite
-Jan  1 12:00:01 smc kern.info kernel: [   15.717665] rockchip-suspend not set sleep-mode-config for mem-ultra
-Jan  1 12:00:01 smc kern.info kernel: [   15.717672] rockchip-suspend not set wakeup-config for mem-ultra
-Jan  1 12:00:01 smc kern.info kernel: [   15.718575] I : [File] : drivers/gpu/arm/mali400/mali/linux/mali_kernel_linux.c; [Line] : 406; [Func] : mali_module_init(); svn_rev_string_from_arm of this mali_ko is '', rk_ko_ver is '5', built at '03:57:57', on 'Jan 11 2024
-Jan  1 12:00:01 smc kern.warn kernel: [   15.719049] Mali: 
-Jan  1 12:00:01 smc kern.warn kernel: [   15.719053] Mali device driver loaded
-Jan  1 12:00:01 smc kern.info kernel: [   15.719073] ALSA device list:
-Jan  1 12:00:01 smc kern.info kernel: [   15.719081]   #0: rockchip-rk809
-Jan  1 12:00:01 smc kern.info kernel: [   15.719089]   #1: rockchip-hdmi0
-Jan  1 12:00:01 smc kern.info kernel: [   15.719428] Waiting for root device /dev/mmcblk1p2...
-Jan  1 12:00:01 smc kern.warn kernel: [   15.719577] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
-Jan  1 12:00:01 smc kern.info kernel: [   15.719592] cfg80211: failed to load regulatory.db
-Jan  1 12:00:01 smc kern.debug kernel: [   15.728801] vccio_sd: ramp_delay not set
-Jan  1 12:00:01 smc kern.info kernel: [   15.751170] mmc_host mmc1: Bus speed (slot 0) = 148500000Hz (slot req 150000000Hz, actual 148500000HZ div = 0)
-Jan  1 12:00:01 smc kern.info kernel: [   15.775978] dwmmc_rockchip fe2b0000.dwmmc: Successfully tuned phase to 270
-Jan  1 12:00:01 smc kern.info kernel: [   15.776025] mmc1: new ultra high speed SDR104 SDHC card at address 59b4
-Jan  1 12:00:01 smc kern.info kernel: [   15.777100] mmcblk1: mmc1:59b4 USDU1 14.9 GiB 
-Jan  1 12:00:01 smc kern.warn kernel: [   15.784125] GPT:Primary header thinks Alt. header is not at the end of the disk.
-Jan  1 12:00:01 smc kern.warn kernel: [   15.784169] GPT:2842663 != 31176703
-Jan  1 12:00:01 smc kern.warn kernel: [   15.784180] GPT:Alternate GPT header not at the end of the disk.
-Jan  1 12:00:01 smc kern.warn kernel: [   15.784189] GPT:2842663 != 31176703
-Jan  1 12:00:01 smc kern.warn kernel: [   15.784197] GPT: Use GNU Parted to correct GPT errors.
-Jan  1 12:00:01 smc kern.info kernel: [   15.784246]  mmcblk1: p1 p2 p3 p4
-Jan  1 12:00:01 smc kern.info kernel: [   15.892180] EXT4-fs (mmcblk1p2): recovery complete
-Jan  1 12:00:01 smc kern.info kernel: [   15.896026] EXT4-fs (mmcblk1p2): mounted filesystem with ordered data mode. Opts: (null)
-Jan  1 12:00:01 smc kern.info kernel: [   15.896187] VFS: Mounted root (ext4 filesystem) on device 179:2.
-Jan  1 12:00:01 smc kern.info kernel: [   15.897107] devtmpfs: mounted
-Jan  1 12:00:01 smc kern.info kernel: [   15.907391] Freeing unused kernel memory: 6400K
-Jan  1 12:00:01 smc kern.info kernel: [   15.907814] Run /sbin/init as init process
-Jan  1 12:00:01 smc kern.debug kernel: [   15.907838]   with arguments:
-Jan  1 12:00:01 smc kern.debug kernel: [   15.907846]     /sbin/init
-Jan  1 12:00:01 smc kern.debug kernel: [   15.907853]     earlyprintk
-Jan  1 12:00:01 smc kern.debug kernel: [   15.907858]   with environment:
-Jan  1 12:00:01 smc kern.debug kernel: [   15.907865]     HOME=/
-Jan  1 12:00:01 smc kern.debug kernel: [   15.907871]     TERM=linux
-Jan  1 12:00:01 smc kern.info kernel: [   16.014210] EXT4-fs (mmcblk1p2): re-mounted. Opts: (null)
-Jan  1 12:00:01 smc user.warn kernel: [   16.111931] Running ldconfig...
-Jan  1 12:00:01 smc user.warn kernel: [   16.429671] ldconfig launched
-Jan  1 12:00:01 smc user.warn kernel: [   16.429871] Copying libmraa libraries to /usr/lib/...
-Jan  1 12:00:01 smc user.warn kernel: [   16.436327] Error copying libmraa.so.2022.08.1 to /usr/lib
-Jan  1 12:00:02 smc kern.info kernel: [   16.599554] rk_gmac-dwmac fe010000.ethernet eth0: PHY [stmmac-1:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
-Jan  1 12:00:02 smc kern.info kernel: [   16.604439] dwmac4: Master AXI performs any burst length
-Jan  1 12:00:02 smc kern.info kernel: [   16.604534] rk_gmac-dwmac fe010000.ethernet eth0: No Safety Features support found
-Jan  1 12:00:02 smc kern.info kernel: [   16.604600] rk_gmac-dwmac fe010000.ethernet eth0: IEEE 1588-2008 Advanced Timestamp supported
-Jan  1 12:00:02 smc kern.info kernel: [   16.605094] rk_gmac-dwmac fe010000.ethernet eth0: registered PTP clock
-Jan  1 12:00:02 smc kern.info kernel: [   16.606463] rk_gmac-dwmac fe010000.ethernet eth0: configuring for phy/rgmii link mode
-Jan  1 12:00:02 smc kern.err kernel: [   17.449591] rk-pcie 3c0000000.pcie: PCIe Link Fail
-Jan  1 12:00:02 smc kern.err kernel: [   17.449695] rk-pcie 3c0000000.pcie: failed to initialize host
-Jan  1 12:00:02 smc kern.err kernel: [   17.459561] rk-pcie 3c0800000.pcie: PCIe Link Fail
-Jan  1 12:00:02 smc kern.err kernel: [   17.459655] rk-pcie 3c0800000.pcie: failed to initialize host
-Jan  1 12:00:03 smc kern.info kernel: [   18.202934] vendor storage:20190527 ret = -1
-Jan  1 12:00:05 smc kern.info kernel: [   19.885249] NET: Registered protocol family 10
-Jan  1 12:00:05 smc kern.info kernel: [   19.886720] Segment Routing with IPv6
-Jan  1 12:00:05 smc daemon.info dhcpcd[232]: dhcpcd-9.4.1 starting
-Jan  1 12:00:05 smc daemon.info dhcpcd[237]: DUID 00:01:00:01:27:81:cb:46:46:ae:43:aa:f9:d8
-Jan  1 12:00:05 smc kern.info kernel: [   19.905443] 8021q: 802.1Q VLAN Support v1.8
-Jan  1 12:00:05 smc daemon.warn dhcpcd[237]: no interfaces have a carrier
-Jan  1 12:00:05 smc daemon.info dhcpcd[237]: eth0: waiting for carrier
-Jan  1 12:00:05 smc auth.info sshd[253]: Server listening on 0.0.0.0 port 22.
-Jan  1 12:00:05 smc auth.info sshd[253]: Server listening on :: port 22.
-Jan  1 12:00:05 smc user.warn kernel: [   20.108445] Starting script to enable SSH root login.
-Jan  1 12:00:05 smc user.warn kernel: [   20.128316] SSH configuration updated to allow root login.
-Jan  1 12:00:05 smc auth.info sshd[253]: Received signal 15; terminating.
-Jan  1 12:00:05 smc auth.info sshd[266]: Server listening on 0.0.0.0 port 22.
-Jan  1 12:00:05 smc auth.info sshd[266]: Server listening on :: port 22.
-Jan  1 12:00:05 smc user.warn kernel: [   20.198006] SSH service restarted successfully.
-Jan  1 12:00:05 smc user.warn kernel: [   20.201406] Script completed successfully.
-Jan  1 12:00:05 smc daemon.info : starting pid 270, tty '/dev/console': '/sbin/getty -L  console 0 vt100 '
-Jan  1 12:00:06 smc daemon.info dhcpcd[237]: eth0: carrier acquired
-Jan  1 12:00:06 smc kern.info kernel: [   20.698078] rk_gmac-dwmac fe010000.ethernet eth0: Link is Up - 1Gbps/Full - flow control rx/tx
-Jan  1 12:00:06 smc kern.info kernel: [   20.698269] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
-Jan  1 12:00:06 smc daemon.info dhcpcd[237]: eth0: IAID 43:aa:f9:d8
-Jan  1 12:00:06 smc daemon.info dhcpcd[237]: eth0: adding address fe80::dcc1:3b6a:bdb1:fb16
-Jan  1 12:00:06 smc daemon.info dhcpcd[237]: eth0: soliciting an IPv6 router
-Jan  1 12:00:07 smc daemon.info dhcpcd[237]: eth0: soliciting a DHCP lease
-Jan  1 12:00:12 smc daemon.info dhcpcd[237]: eth0: probing for an IPv4LL address
-Jan  1 12:00:17 smc daemon.info dhcpcd[237]: eth0: using IPv4LL address 169.254.211.200
-Jan  1 12:00:17 smc daemon.info dhcpcd[237]: eth0: adding route to 169.254.0.0/16
-Jan  1 12:00:17 smc daemon.info dhcpcd[237]: eth0: adding default route
-Jan  1 12:00:19 smc daemon.warn dhcpcd[237]: eth0: no IPv6 Routers available
-Jan  1 12:00:32 smc kern.info kernel: [   46.986352] pcie30_3v3: disabling
-Jan  1 12:38:13 smc auth.info sshd[675]: Accepted password for root from 169.254.221.214 port 50312 ssh2
-Jan  1 12:40:20 smc local1.notice libmraa[706]: libmraa version 2022.08.1 initialised by user 'root' with EUID 0
-Jan  1 12:40:20 smc local1.err libmraa[706]: Unknown Platform, currently not supported by MRAA
-Jan  1 12:40:20 smc local1.notice libmraa[706]: gpio: platform doesn't support chardev, falling back to sysfs
-Jan  1 12:40:20 smc local1.notice libmraa[706]: libmraa initialised for platform 'Unknown platform' of type 98
-Jan  1 12:40:20 smc local1.err libmraa[706]: gpio: init: pin 11 beyond platform pin count (0)
+Jan  1 12:00:01 smc kern.notice kernel: klogd started: BusyBox v1.35.0 (2024-01-12 14:16:37 GMT)
+Jan  1 12:00:01 smc kern.info kernel: [   12.872716] Booting Linux on physical CPU 0x0000000000 [0x412fd050]
+Jan  1 12:00:01 smc kern.notice kernel: [   12.872755] Linux version 5.10.160-dirty (hal@WIN-00335) (aarch64-buildroot-linux-gnu-gcc.br_real (Buildroot 2022.08.1-dirty) 11.3.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Jan 12 14:27:49 GMT 2024
+Jan  1 12:00:01 smc kern.info kernel: [   12.883390] Machine model: Radxa ROCK3 Model A
+Jan  1 12:00:01 smc kern.info kernel: [   12.883500] efi: UEFI not found.
+Jan  1 12:00:01 smc kern.info kernel: [   12.883773] OF: fdt: Reserved memory: failed to reserve memory for node 'drm-logo@00000000': base 0x0000000000000000, size 0 MiB
+Jan  1 12:00:01 smc kern.info kernel: [   12.883805] OF: fdt: Reserved memory: failed to reserve memory for node 'drm-cubic-lut@00000000': base 0x0000000000000000, size 0 MiB
+Jan  1 12:00:01 smc kern.info kernel: [   12.959228] Zone ranges:
+Jan  1 12:00:01 smc kern.info kernel: [   12.959253]   DMA      [mem 0x0000000000200000-0x000000007fffffff]
+Jan  1 12:00:01 smc kern.info kernel: [   12.959273]   DMA32    empty
+Jan  1 12:00:01 smc kern.info kernel: [   12.959285]   Normal   empty
+Jan  1 12:00:01 smc kern.info kernel: [   12.959298] Movable zone start for each node
+Jan  1 12:00:01 smc kern.info kernel: [   12.959305] Early memory node ranges
+Jan  1 12:00:01 smc kern.info kernel: [   12.959316]   node   0: [mem 0x0000000000200000-0x000000007fffffff]
+Jan  1 12:00:01 smc kern.info kernel: [   12.959331] Initmem setup node 0 [mem 0x0000000000200000-0x000000007fffffff]
+Jan  1 12:00:01 smc kern.debug kernel: [   12.959344] On node 0 totalpages: 523776
+Jan  1 12:00:01 smc kern.debug kernel: [   12.959353]   DMA zone: 8184 pages used for memmap
+Jan  1 12:00:01 smc kern.debug kernel: [   12.959360]   DMA zone: 0 pages reserved
+Jan  1 12:00:01 smc kern.debug kernel: [   12.959367]   DMA zone: 523776 pages, LIFO batch:63
+Jan  1 12:00:01 smc kern.info kernel: [   12.975133] cma: Reserved 16 MiB at 0x000000007bc00000
+Jan  1 12:00:01 smc kern.info kernel: [   12.975274] psci: probing for conduit method from DT.
+Jan  1 12:00:01 smc kern.info kernel: [   12.975297] psci: PSCIv1.1 detected in firmware.
+Jan  1 12:00:01 smc kern.info kernel: [   12.975307] psci: Using standard PSCI v0.2 function IDs
+Jan  1 12:00:01 smc kern.info kernel: [   12.975320] psci: MIGRATE_INFO_TYPE not supported.
+Jan  1 12:00:01 smc kern.info kernel: [   12.975333] psci: SMC Calling Convention v1.2
+Jan  1 12:00:01 smc kern.info kernel: [   12.975900] percpu: Embedded 32 pages/cpu s93160 r8192 d29720 u131072
+Jan  1 12:00:01 smc kern.debug kernel: [   12.975968] pcpu-alloc: s93160 r8192 d29720 u131072 alloc=32*4096
+Jan  1 12:00:01 smc kern.debug kernel: [   12.975981] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+Jan  1 12:00:01 smc kern.info kernel: [   12.976156] Detected VIPT I-cache on CPU0
+Jan  1 12:00:01 smc kern.info kernel: [   12.976239] CPU features: detected: GIC system register CPU interface
+Jan  1 12:00:01 smc kern.info kernel: [   12.976253] CPU features: detected: Virtualization Host Extensions
+Jan  1 12:00:01 smc kern.info kernel: [   12.976272] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+Jan  1 12:00:01 smc kern.info kernel: [   12.976300] alternatives: patching kernel code
+Jan  1 12:00:01 smc kern.info kernel: [   12.976859] Built 1 zonelists, mobility grouping on.  Total pages: 515592
+Jan  1 12:00:01 smc kern.notice kernel: [   12.976879] Kernel command line: root=/dev/mmcblk1p2 earlyprintk console=ttyS2,1500000n8 rw rootwait
+Jan  1 12:00:01 smc kern.info kernel: [   12.977886] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Jan  1 12:00:01 smc kern.info kernel: [   12.978251] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Jan  1 12:00:01 smc kern.info kernel: [   12.978267] mem auto-init: stack:off, heap alloc:off, heap free:off
+Jan  1 12:00:01 smc kern.info kernel: [   13.016690] Memory: 2006268K/2095104K available (14720K kernel code, 3258K rwdata, 5956K rodata, 6400K init, 542K bss, 72452K reserved, 16384K cma-reserved)
+Jan  1 12:00:01 smc kern.info kernel: [   13.016927] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Jan  1 12:00:01 smc kern.info kernel: [   13.016997] ftrace: allocating 57805 entries in 226 pages
+Jan  1 12:00:01 smc kern.info kernel: [   13.166354] ftrace: allocated 226 pages with 4 groups
+Jan  1 12:00:01 smc kern.info kernel: [   13.166885] rcu: Hierarchical RCU implementation.
+Jan  1 12:00:01 smc kern.info kernel: [   13.166904] rcu:       RCU event tracing is enabled.
+Jan  1 12:00:01 smc kern.info kernel: [   13.166916] rcu:       RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+Jan  1 12:00:01 smc kern.info kernel: [   13.166927]    Rude variant of Tasks RCU enabled.
+Jan  1 12:00:01 smc kern.info kernel: [   13.166935]    Tracing variant of Tasks RCU enabled.
+Jan  1 12:00:01 smc kern.info kernel: [   13.166945] rcu: RCU calculated value of scheduler-enlistment delay is 30 jiffies.
+Jan  1 12:00:01 smc kern.info kernel: [   13.166954] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+Jan  1 12:00:01 smc kern.info kernel: [   13.174940] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+Jan  1 12:00:01 smc kern.info kernel: [   13.177889] GICv3: GIC: Using split EOI/Deactivate mode
+Jan  1 12:00:01 smc kern.info kernel: [   13.177911] GICv3: 320 SPIs implemented
+Jan  1 12:00:01 smc kern.info kernel: [   13.177922] GICv3: 0 Extended SPIs implemented
+Jan  1 12:00:01 smc kern.info kernel: [   13.177985] GICv3: Distributor has no Range Selector support
+Jan  1 12:00:01 smc kern.info kernel: [   13.178006] GICv3: 16 PPIs implemented
+Jan  1 12:00:01 smc kern.info kernel: [   13.178058] GICv3: CPU0: found redistributor 0 region 0:0x00000000fd460000
+Jan  1 12:00:01 smc kern.info kernel: [   13.178289] ITS [mem 0xfd440000-0xfd45ffff]
+Jan  1 12:00:01 smc kern.info kernel: [   13.178396] ITS@0x00000000fd440000: allocated 8192 Devices @3c0000 (indirect, esz 8, psz 64K, shr 0)
+Jan  1 12:00:01 smc kern.info kernel: [   13.178457] ITS@0x00000000fd440000: allocated 32768 Interrupt Collections @3d0000 (flat, esz 2, psz 64K, shr 0)
+Jan  1 12:00:01 smc kern.info kernel: [   13.178475] ITS: using cache flushing for cmd queue
+Jan  1 12:00:01 smc kern.info kernel: [   13.179056] GICv3: using LPI property table @0x00000000003f0000
+Jan  1 12:00:01 smc kern.info kernel: [   13.179239] GIC: using cache flushing for LPI property table
+Jan  1 12:00:01 smc kern.info kernel: [   13.179256] GICv3: CPU0: using allocated LPI pending table @0x0000000000800000
+Jan  1 12:00:01 smc kern.info kernel: [   13.227649] arch_timer: cp15 timer(s) running at 24.00MHz (phys).
+Jan  1 12:00:01 smc kern.info kernel: [   13.227678] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+Jan  1 12:00:01 smc kern.info kernel: [   13.227699] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+Jan  1 12:00:01 smc kern.info kernel: [   13.229611] Console: colour dummy device 80x25
+Jan  1 12:00:01 smc kern.info kernel: [   13.229672] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=80000)
+Jan  1 12:00:01 smc kern.info kernel: [   13.229696] pid_max: default: 32768 minimum: 301
+Jan  1 12:00:01 smc kern.info kernel: [   13.229890] LSM: Security Framework initializing
+Jan  1 12:00:01 smc kern.info kernel: [   13.230001] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+Jan  1 12:00:01 smc kern.info kernel: [   13.230030] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+Jan  1 12:00:01 smc kern.info kernel: [   13.233439] rcu: Hierarchical SRCU implementation.
+Jan  1 12:00:01 smc kern.info kernel: [   13.234754] Platform MSI: interrupt-controller@fd440000 domain created
+Jan  1 12:00:01 smc kern.info kernel: [   13.235430] PCI/MSI: /interrupt-controller@fd400000/interrupt-controller@fd440000 domain created
+Jan  1 12:00:01 smc kern.info kernel: [   13.235939] EFI services will not be available.
+Jan  1 12:00:01 smc kern.info kernel: [   13.236636] smp: Bringing up secondary CPUs ...
+Jan  1 12:00:01 smc kern.info kernel: [   13.237936] Detected VIPT I-cache on CPU1
+Jan  1 12:00:01 smc kern.info kernel: [   13.237995] GICv3: CPU1: found redistributor 100 region 0:0x00000000fd480000
+Jan  1 12:00:01 smc kern.info kernel: [   13.238023] GICv3: CPU1: using allocated LPI pending table @0x0000000000810000
+Jan  1 12:00:01 smc kern.info kernel: [   13.238103] CPU1: Booted secondary processor 0x0000000100 [0x412fd050]
+Jan  1 12:00:01 smc kern.info kernel: [   13.239466] Detected VIPT I-cache on CPU2
+Jan  1 12:00:01 smc kern.info kernel: [   13.239518] GICv3: CPU2: found redistributor 200 region 0:0x00000000fd4a0000
+Jan  1 12:00:01 smc kern.info kernel: [   13.239541] GICv3: CPU2: using allocated LPI pending table @0x0000000000820000
+Jan  1 12:00:01 smc kern.info kernel: [   13.239600] CPU2: Booted secondary processor 0x0000000200 [0x412fd050]
+Jan  1 12:00:01 smc kern.info kernel: [   13.240991] Detected VIPT I-cache on CPU3
+Jan  1 12:00:01 smc kern.info kernel: [   13.241038] GICv3: CPU3: found redistributor 300 region 0:0x00000000fd4c0000
+Jan  1 12:00:01 smc kern.info kernel: [   13.241061] GICv3: CPU3: using allocated LPI pending table @0x0000000000830000
+Jan  1 12:00:01 smc kern.info kernel: [   13.241118] CPU3: Booted secondary processor 0x0000000300 [0x412fd050]
+Jan  1 12:00:01 smc kern.info kernel: [   13.241317] smp: Brought up 1 node, 4 CPUs
+Jan  1 12:00:01 smc kern.info kernel: [   13.241378] SMP: Total of 4 processors activated.
+Jan  1 12:00:01 smc kern.info kernel: [   13.241391] CPU features: detected: Privileged Access Never
+Jan  1 12:00:01 smc kern.info kernel: [   13.241401] CPU features: detected: User Access Override
+Jan  1 12:00:01 smc kern.info kernel: [   13.241413] CPU features: detected: 32-bit EL0 Support
+Jan  1 12:00:01 smc kern.info kernel: [   13.241422] CPU features: detected: Common not Private translations
+Jan  1 12:00:01 smc kern.info kernel: [   13.241433] CPU features: detected: RAS Extension Support
+Jan  1 12:00:01 smc kern.info kernel: [   13.241442] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+Jan  1 12:00:01 smc kern.info kernel: [   13.241452] CPU features: detected: CRC32 instructions
+Jan  1 12:00:01 smc kern.info kernel: [   13.241463] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+Jan  1 12:00:01 smc kern.info kernel: [   13.241474] CPU features: detected: 32-bit EL1 Support
+Jan  1 12:00:01 smc kern.info kernel: [   13.241484] CPU features: detected: RCpc load-acquire (LDAPR)
+Jan  1 12:00:01 smc kern.info kernel: [   13.241606] CPU: All CPU(s) started at EL2
+Jan  1 12:00:01 smc kern.info kernel: [   13.243460] devtmpfs: initialized
+Jan  1 12:00:01 smc kern.notice kernel: [   13.284654] Registered cp15_barrier emulation handler
+Jan  1 12:00:01 smc kern.notice kernel: [   13.284690] Registered setend emulation handler
+Jan  1 12:00:01 smc kern.info kernel: [   13.285021] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+Jan  1 12:00:01 smc kern.info kernel: [   13.285054] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+Jan  1 12:00:01 smc kern.info kernel: [   13.286101] pinctrl core: initialized pinctrl subsystem
+Jan  1 12:00:01 smc kern.debug kernel: [   13.286617] regulator-dummy: no parameters, enabled
+Jan  1 12:00:01 smc kern.info kernel: [   13.287159] DMI not present or invalid.
+Jan  1 12:00:01 smc kern.info kernel: [   13.288312] NET: Registered protocol family 16
+Jan  1 12:00:01 smc kern.info kernel: [   13.291647] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+Jan  1 12:00:01 smc kern.info kernel: [   13.291976] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Jan  1 12:00:01 smc kern.info kernel: [   13.296486] Registered FIQ tty driver
+Jan  1 12:00:01 smc kern.info kernel: [   13.297230] thermal_sys: Registered thermal governor 'fair_share'
+Jan  1 12:00:01 smc kern.info kernel: [   13.297240] thermal_sys: Registered thermal governor 'step_wise'
+Jan  1 12:00:01 smc kern.info kernel: [   13.297254] thermal_sys: Registered thermal governor 'user_space'
+Jan  1 12:00:01 smc kern.info kernel: [   13.297265] thermal_sys: Registered thermal governor 'power_allocator'
+Jan  1 12:00:01 smc kern.warn kernel: [   13.298049] thermal thermal_zone1: power_allocator: sustainable_power will be estimated
+Jan  1 12:00:01 smc kern.info kernel: [   13.298177] cpuidle: using governor menu
+Jan  1 12:00:01 smc kern.info kernel: [   13.298631] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+Jan  1 12:00:01 smc kern.info kernel: [   13.298888] ASID allocator initialised with 65536 entries
+Jan  1 12:00:01 smc kern.info kernel: [   13.302563] ramoops: dmesg-0   0x20000@0x0000000000110000
+Jan  1 12:00:01 smc kern.info kernel: [   13.302618] ramoops: console   0x80000@0x0000000000130000
+Jan  1 12:00:01 smc kern.info kernel: [   13.302662] ramoops: pmsg      0x50000@0x00000000001b0000
+Jan  1 12:00:01 smc kern.info kernel: [   13.303414] printk: console [ramoops-1] enabled
+Jan  1 12:00:01 smc kern.info kernel: [   13.303430] pstore: Registered ramoops as persistent store backend
+Jan  1 12:00:01 smc kern.info kernel: [   13.303444] ramoops: using 0xf0000@0x110000, ecc: 0
+Jan  1 12:00:01 smc kern.info kernel: [   13.383622] rockchip-gpio fdd60000.gpio0: probed /pinctrl/gpio0@fdd60000
+Jan  1 12:00:01 smc kern.info kernel: [   13.384680] rockchip-gpio fe740000.gpio1: probed /pinctrl/gpio1@fe740000
+Jan  1 12:00:01 smc kern.info kernel: [   13.385764] rockchip-gpio fe750000.gpio2: probed /pinctrl/gpio2@fe750000
+Jan  1 12:00:01 smc kern.info kernel: [   13.386922] rockchip-gpio fe760000.gpio3: probed /pinctrl/gpio3@fe760000
+Jan  1 12:00:01 smc kern.info kernel: [   13.388008] rockchip-gpio fe770000.gpio4: probed /pinctrl/gpio4@fe770000
+Jan  1 12:00:01 smc kern.info kernel: [   13.388260] rockchip-pinctrl pinctrl: probed pinctrl
+Jan  1 12:00:01 smc kern.err kernel: [   13.433712] fiq_debugger fiq_debugger.0: IRQ fiq not found
+Jan  1 12:00:01 smc kern.err kernel: [   13.433760] fiq_debugger fiq_debugger.0: IRQ wakeup not found
+Jan  1 12:00:01 smc kern.err kernel: [   13.433785] fiq_debugger_probe: could not install nmi irq handler
+Jan  1 12:00:01 smc kern.info kernel: [   13.434469] printk: console [ttyFIQ0] enabled
+Jan  1 12:00:01 smc kern.info kernel: [   13.434893] Registered fiq debugger ttyFIQ0
+Jan  1 12:00:01 smc kern.debug kernel: [   13.435778] dc_12v: 12000 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   13.436089] reg-fixed-voltage dc-12v: dc_12v supplying 12000000uV
+Jan  1 12:00:01 smc kern.debug kernel: [   13.436304] reg-fixed-voltage vcc3v3-sys: Looking up vin-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   13.436323] vcc3v3_sys: supplied by dc_12v
+Jan  1 12:00:01 smc kern.debug kernel: [   13.436351] dc_12v: could not add device link regulator.2: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   13.436424] vcc3v3_sys: 3300 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   13.436725] reg-fixed-voltage vcc3v3-sys: vcc3v3_sys supplying 3300000uV
+Jan  1 12:00:01 smc kern.debug kernel: [   13.436979] reg-fixed-voltage vcc5v0-sys: Looking up vin-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   13.436997] vcc5v0_sys: supplied by dc_12v
+Jan  1 12:00:01 smc kern.debug kernel: [   13.437023] dc_12v: could not add device link regulator.3: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   13.437103] vcc5v0_sys: 5000 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   13.437383] reg-fixed-voltage vcc5v0-sys: vcc5v0_sys supplying 5000000uV
+Jan  1 12:00:01 smc kern.debug kernel: [   13.437870] vcc5v0_host: no parameters, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   13.438184] reg-fixed-voltage vcc5v0-host-regulator: vcc5v0_host supplying 0uV
+Jan  1 12:00:01 smc kern.debug kernel: [   13.438594] vcc5v0_otg: no parameters, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   13.438895] reg-fixed-voltage vcc5v0-otg-regulator: vcc5v0_otg supplying 0uV
+Jan  1 12:00:01 smc kern.debug kernel: [   13.439261] vcc5v0_hub: no parameters, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   13.439569] reg-fixed-voltage vcc5v0-usbhub-regulator: vcc5v0_hub supplying 0uV
+Jan  1 12:00:01 smc kern.debug kernel: [   13.439792] reg-fixed-voltage pcie30-avdd0v9: Looking up vin-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   13.439810] pcie30_avdd0v9: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   13.439842] vcc3v3_sys: could not add device link regulator.7: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   13.439915] pcie30_avdd0v9: 900 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   13.440220] reg-fixed-voltage pcie30-avdd0v9: pcie30_avdd0v9 supplying 900000uV
+Jan  1 12:00:01 smc kern.debug kernel: [   13.440483] reg-fixed-voltage pcie30-avdd1v8: Looking up vin-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   13.440502] pcie30_avdd1v8: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   13.440529] vcc3v3_sys: could not add device link regulator.8: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   13.440600] pcie30_avdd1v8: 1800 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   13.440888] reg-fixed-voltage pcie30-avdd1v8: pcie30_avdd1v8 supplying 1800000uV
+Jan  1 12:00:01 smc kern.debug kernel: [   13.441664] pcie30_3v3: 100 <--> 3300 mV at 3300 mV, enabled
+Jan  1 12:00:01 smc kern.info kernel: [   13.442747] iommu: Default domain type: Translated 
+Jan  1 12:00:01 smc kern.debug kernel: [   13.443183] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up vpu-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   13.443221] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up vpu-supply property in node /power-management@fdd90000/power-controller failed
+Jan  1 12:00:01 smc kern.debug kernel: [   13.444254] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rga-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   13.444291] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rga-supply property in node /power-management@fdd90000/power-controller failed
+Jan  1 12:00:01 smc kern.debug kernel: [   13.446102] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rkvenc-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   13.446139] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rkvenc-supply property in node /power-management@fdd90000/power-controller failed
+Jan  1 12:00:01 smc kern.debug kernel: [   13.446838] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rkvdec-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   13.446874] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up rkvdec-supply property in node /power-management@fdd90000/power-controller failed
+Jan  1 12:00:01 smc kern.debug kernel: [   13.447511] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up vi-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   13.447548] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up vi-supply property in node /power-management@fdd90000/power-controller failed
+Jan  1 12:00:01 smc kern.notice kernel: [   13.449552] SCSI subsystem initialized
+Jan  1 12:00:01 smc kern.debug kernel: [   13.449653] libata version 3.00 loaded.
+Jan  1 12:00:01 smc kern.info kernel: [   13.449962] usbcore: registered new interface driver usbfs
+Jan  1 12:00:01 smc kern.info kernel: [   13.450052] usbcore: registered new interface driver hub
+Jan  1 12:00:01 smc kern.info kernel: [   13.450130] usbcore: registered new device driver usb
+Jan  1 12:00:01 smc kern.info kernel: [   13.450320] mc: Linux media interface: v0.10
+Jan  1 12:00:01 smc kern.info kernel: [   13.450446] videodev: Linux video capture interface: v2.00
+Jan  1 12:00:01 smc kern.info kernel: [   13.450589] pps_core: LinuxPPS API ver. 1 registered
+Jan  1 12:00:01 smc kern.info kernel: [   13.450607] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Jan  1 12:00:01 smc kern.info kernel: [   13.450653] PTP clock support registered
+Jan  1 12:00:01 smc kern.info kernel: [   13.451890] arm-scmi firmware:scmi: SCMI Notifications - Core Enabled.
+Jan  1 12:00:01 smc kern.info kernel: [   13.452000] arm-scmi firmware:scmi: SCMI Protocol v2.0 'rockchip:' Firmware version 0x0
+Jan  1 12:00:01 smc kern.info kernel: [   13.455653] Advanced Linux Sound Architecture Driver Initialized.
+Jan  1 12:00:01 smc kern.info kernel: [   13.457384] rockchip-cpuinfo cpuinfo: SoC              : 35682000
+Jan  1 12:00:01 smc kern.info kernel: [   13.457418] rockchip-cpuinfo cpuinfo: Serial           : 3045a006a70d95ef
+Jan  1 12:00:01 smc kern.info kernel: [   13.457539] rockchip-cpuinfo cpuinfo: soc_is_rk3566t: 00000000
+Jan  1 12:00:01 smc kern.info kernel: [   13.458818] clocksource: Switched to clocksource arch_sys_counter
+Jan  1 12:00:01 smc kern.notice kernel: [   14.453583] VFS: Disk quotas dquot_6.6.0
+Jan  1 12:00:01 smc kern.info kernel: [   14.453736] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Jan  1 12:00:01 smc kern.info kernel: [   14.471364] NET: Registered protocol family 2
+Jan  1 12:00:01 smc kern.info kernel: [   14.471686] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Jan  1 12:00:01 smc kern.info kernel: [   14.474623] tcp_listen_portaddr_hash hash table entries: 1024 (order: 3, 40960 bytes, linear)
+Jan  1 12:00:01 smc kern.info kernel: [   14.474828] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Jan  1 12:00:01 smc kern.info kernel: [   14.474991] TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
+Jan  1 12:00:01 smc kern.info kernel: [   14.475560] TCP: Hash tables configured (established 16384 bind 16384)
+Jan  1 12:00:01 smc kern.info kernel: [   14.475922] MPTCP token hash table entries: 2048 (order: 4, 98304 bytes, linear)
+Jan  1 12:00:01 smc kern.info kernel: [   14.476084] UDP hash table entries: 1024 (order: 4, 98304 bytes, linear)
+Jan  1 12:00:01 smc kern.info kernel: [   14.476222] UDP-Lite hash table entries: 1024 (order: 4, 98304 bytes, linear)
+Jan  1 12:00:01 smc kern.info kernel: [   14.476607] NET: Registered protocol family 1
+Jan  1 12:00:01 smc kern.info kernel: [   14.477666] RPC: Registered named UNIX socket transport module.
+Jan  1 12:00:01 smc kern.info kernel: [   14.477691] RPC: Registered udp transport module.
+Jan  1 12:00:01 smc kern.info kernel: [   14.477705] RPC: Registered tcp transport module.
+Jan  1 12:00:01 smc kern.info kernel: [   14.477717] RPC: Registered tcp NFSv4.1 backchannel transport module.
+Jan  1 12:00:01 smc kern.info kernel: [   14.479557] PCI: CLS 0 bytes, default 64
+Jan  1 12:00:01 smc kern.info kernel: [   14.483504] rockchip-thermal fe710000.tsadc: tsadc is probed successfully!
+Jan  1 12:00:01 smc kern.info kernel: [   14.485242] hw perfevents: enabled with armv8_cortex_a55 PMU driver, 7 counters available
+Jan  1 12:00:01 smc kern.info kernel: [   14.486939] kvm [1]: IPA Size Limit: 40 bits
+Jan  1 12:00:01 smc kern.info kernel: [   14.486999] kvm [1]: GICv3: no GICV resource entry
+Jan  1 12:00:01 smc kern.info kernel: [   14.487017] kvm [1]: disabling GICv2 emulation
+Jan  1 12:00:01 smc kern.info kernel: [   14.487031] kvm [1]: GIC system register CPU interface enabled
+Jan  1 12:00:01 smc kern.info kernel: [   14.487277] kvm [1]: vgic interrupt IRQ9
+Jan  1 12:00:01 smc kern.info kernel: [   14.487603] kvm [1]: VHE mode initialized successfully
+Jan  1 12:00:01 smc kern.notice kernel: [   14.494865] Initialise system trusted keyrings
+Jan  1 12:00:01 smc kern.info kernel: [   14.495167] workingset: timestamp_bits=46 max_order=19 bucket_order=0
+Jan  1 12:00:01 smc kern.notice kernel: [   14.506829] NFS: Registering the id_resolver key type
+Jan  1 12:00:01 smc kern.notice kernel: [   14.506916] Key type id_resolver registered
+Jan  1 12:00:01 smc kern.notice kernel: [   14.506935] Key type id_legacy registered
+Jan  1 12:00:01 smc kern.info kernel: [   14.507097] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+Jan  1 12:00:01 smc kern.info kernel: [   14.507118] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+Jan  1 12:00:01 smc kern.info kernel: [   14.507170] ntfs: driver 2.1.32 [Flags: R/W].
+Jan  1 12:00:01 smc kern.info kernel: [   14.509409] NET: Registered protocol family 38
+Jan  1 12:00:01 smc kern.notice kernel: [   14.509443] Key type asymmetric registered
+Jan  1 12:00:01 smc kern.notice kernel: [   14.509460] Asymmetric key parser 'x509' registered
+Jan  1 12:00:01 smc kern.info kernel: [   14.509529] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+Jan  1 12:00:01 smc kern.info kernel: [   14.509549] io scheduler mq-deadline registered
+Jan  1 12:00:01 smc kern.info kernel: [   14.509577] io scheduler kyber registered
+Jan  1 12:00:01 smc kern.debug kernel: [   14.515116] phy phy-fe8a0000.usb2-phy.0: Looking up phy-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   14.515154] vcc5v0_host: could not add device link phy-fe8a0000.usb2-phy.0: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   14.515513] phy phy-fe8a0000.usb2-phy.1: Looking up phy-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   14.515537] phy phy-fe8a0000.usb2-phy.1: Looking up phy-supply property in node /usb2-phy@fe8a0000/otg-port failed
+Jan  1 12:00:01 smc kern.debug kernel: [   14.515687] phy phy-fe8a0000.usb2-phy.1: Looking up vbus-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   14.518423] phy phy-fe8b0000.usb2-phy.2: Looking up phy-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   14.518460] vcc5v0_host: could not add device link phy-fe8b0000.usb2-phy.2: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   14.518858] phy phy-fe8b0000.usb2-phy.3: Looking up phy-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   14.518889] vcc5v0_host: could not add device link phy-fe8b0000.usb2-phy.3: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   14.519176] phy phy-fe8b0000.usb2-phy.3: Looking up vbus-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   14.519198] phy phy-fe8b0000.usb2-phy.3: Looking up vbus-supply property in node /usb2-phy@fe8b0000/otg-port failed
+Jan  1 12:00:01 smc kern.debug kernel: [   14.523700] phy phy-fe820000.phy.4: Looking up phy-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   14.523728] phy phy-fe820000.phy.4: Looking up phy-supply property in node /phy@fe820000 failed
+Jan  1 12:00:01 smc kern.debug kernel: [   14.524413] phy phy-fe830000.phy.5: Looking up phy-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   14.524435] phy phy-fe830000.phy.5: Looking up phy-supply property in node /phy@fe830000 failed
+Jan  1 12:00:01 smc kern.debug kernel: [   14.525071] phy phy-fe840000.phy.6: Looking up phy-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   14.525093] phy phy-fe840000.phy.6: Looking up phy-supply property in node /phy@fe840000 failed
+Jan  1 12:00:01 smc kern.info kernel: [   14.527813] rockchip-snps-pcie3-phy fe8c0000.phy: failed to find rockchip,pipe_grf regmap
+Jan  1 12:00:01 smc kern.debug kernel: [   14.527914] phy phy-fe8c0000.phy.7: Looking up phy-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   14.527935] phy phy-fe8c0000.phy.7: Looking up phy-supply property in node /phy@fe8c0000 failed
+Jan  1 12:00:01 smc kern.info kernel: [   14.533259] rk-pcie 3c0000000.pcie: invalid prsnt-gpios property in node
+Jan  1 12:00:01 smc kern.debug kernel: [   14.533325] rk-pcie 3c0000000.pcie: Looking up vpcie3v3-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   14.534392] rk-pcie 3c0800000.pcie: invalid prsnt-gpios property in node
+Jan  1 12:00:01 smc kern.debug kernel: [   14.534452] rk-pcie 3c0800000.pcie: Looking up vpcie3v3-supply from device tree
+Jan  1 12:00:01 smc kern.err kernel: [   14.534700] rk-pcie 3c0000000.pcie: IRQ msi not found
+Jan  1 12:00:01 smc kern.info kernel: [   14.534726] rk-pcie 3c0000000.pcie: use outband MSI support
+Jan  1 12:00:01 smc kern.err kernel: [   14.534744] rk-pcie 3c0000000.pcie: Missing *config* reg space
+Jan  1 12:00:01 smc kern.info kernel: [   14.534858] rk-pcie 3c0000000.pcie: host bridge /pcie@fe260000 ranges:
+Jan  1 12:00:01 smc kern.info kernel: [   14.534921] rk-pcie 3c0000000.pcie:      err 0x00f4000000..0x00f40fffff -> 0x00f4000000
+Jan  1 12:00:01 smc kern.info kernel: [   14.534967] rk-pcie 3c0000000.pcie:       IO 0x00f4100000..0x00f41fffff -> 0x00f4100000
+Jan  1 12:00:01 smc kern.info kernel: [   14.535019] rk-pcie 3c0000000.pcie:      MEM 0x00f4200000..0x00f5ffffff -> 0x00f4200000
+Jan  1 12:00:01 smc kern.info kernel: [   14.535050] rk-pcie 3c0000000.pcie:      MEM 0x0300000000..0x033fffffff -> 0x0300000000
+Jan  1 12:00:01 smc kern.err kernel: [   14.535118] rk-pcie 3c0000000.pcie: Missing *config* reg space
+Jan  1 12:00:01 smc kern.err kernel: [   14.535184] rk-pcie 3c0000000.pcie: invalid resource
+Jan  1 12:00:01 smc kern.info kernel: [   14.535349] mpp_service mpp-srv: 
+Jan  1 12:00:01 smc kern.info kernel: [   14.535372] mpp_service mpp-srv: probe start
+Jan  1 12:00:01 smc kern.info kernel: [   14.539731] mpp_vdpu2 fdea0400.vdpu: Adding to iommu group 0
+Jan  1 12:00:01 smc kern.info kernel: [   14.540075] mpp_vdpu2 fdea0400.vdpu: probe device
+Jan  1 12:00:01 smc kern.info kernel: [   14.540990] mpp_vdpu2 fdea0400.vdpu: probing finish
+Jan  1 12:00:01 smc kern.info kernel: [   14.541889] mpp_vepu2 fdee0000.vepu: Adding to iommu group 2
+Jan  1 12:00:01 smc kern.info kernel: [   14.542260] mpp_vepu2 fdee0000.vepu: probing start
+Jan  1 12:00:01 smc kern.info kernel: [   14.543145] mpp_vepu2 fdee0000.vepu: probing finish
+Jan  1 12:00:01 smc kern.info kernel: [   14.544071] mpp-iep2 fdef0000.iep: Adding to iommu group 3
+Jan  1 12:00:01 smc kern.info kernel: [   14.544170] snps pcie3phy FW update! size 8192
+Jan  1 12:00:01 smc kern.info kernel: [   14.544414] mpp-iep2 fdef0000.iep: probe device
+Jan  1 12:00:01 smc kern.err kernel: [   14.544925] mpp-iep2 fdef0000.iep: allocate roi buffer failed
+Jan  1 12:00:01 smc kern.info kernel: [   14.545334] mpp-iep2 fdef0000.iep: probing finish
+Jan  1 12:00:01 smc kern.info kernel: [   14.546162] mpp_jpgdec fded0000.jpegd: Adding to iommu group 1
+Jan  1 12:00:01 smc kern.info kernel: [   14.546478] mpp_jpgdec fded0000.jpegd: probe device
+Jan  1 12:00:01 smc kern.info kernel: [   14.547361] mpp_jpgdec fded0000.jpegd: probing finish
+Jan  1 12:00:01 smc kern.info kernel: [   14.549974] mpp_service mpp-srv: probe success
+Jan  1 12:00:01 smc kern.err kernel: [   14.558223] rk-pcie 3c0800000.pcie: IRQ msi not found
+Jan  1 12:00:01 smc kern.info kernel: [   14.558280] rk-pcie 3c0800000.pcie: use outband MSI support
+Jan  1 12:00:01 smc kern.err kernel: [   14.558300] rk-pcie 3c0800000.pcie: Missing *config* reg space
+Jan  1 12:00:01 smc kern.info kernel: [   14.558335] rk-pcie 3c0800000.pcie: host bridge /pcie@fe280000 ranges:
+Jan  1 12:00:01 smc kern.info kernel: [   14.558389] rk-pcie 3c0800000.pcie:      err 0x00f0000000..0x00f00fffff -> 0x00f0000000
+Jan  1 12:00:01 smc kern.info kernel: [   14.558427] rk-pcie 3c0800000.pcie:       IO 0x00f0100000..0x00f01fffff -> 0x00f0100000
+Jan  1 12:00:01 smc kern.info kernel: [   14.558475] rk-pcie 3c0800000.pcie:      MEM 0x00f0200000..0x00f1ffffff -> 0x00f0200000
+Jan  1 12:00:01 smc kern.info kernel: [   14.558506] rk-pcie 3c0800000.pcie:      MEM 0x0380000000..0x03bfffffff -> 0x0380000000
+Jan  1 12:00:01 smc kern.err kernel: [   14.558570] rk-pcie 3c0800000.pcie: Missing *config* reg space
+Jan  1 12:00:01 smc kern.err kernel: [   14.558637] rk-pcie 3c0800000.pcie: invalid resource
+Jan  1 12:00:01 smc kern.info kernel: [   14.558652] dma-pl330 fe530000.dmac: Loaded driver for PL330 DMAC-241330
+Jan  1 12:00:01 smc kern.info kernel: [   14.558664] dma-pl330 fe530000.dmac:   DBUFF-128x8bytes Num_Chans-8 Num_Peri-32 Num_Events-16
+Jan  1 12:00:01 smc kern.info kernel: [   14.562511] dma-pl330 fe550000.dmac: Loaded driver for PL330 DMAC-241330
+Jan  1 12:00:01 smc kern.info kernel: [   14.562544] dma-pl330 fe550000.dmac:   DBUFF-128x8bytes Num_Chans-8 Num_Peri-32 Num_Events-16
+Jan  1 12:00:01 smc kern.info kernel: [   14.563399] rockchip-pvtm fde00000.pvtm: pvtm@0 probed
+Jan  1 12:00:01 smc kern.info kernel: [   14.563657] rockchip-pvtm fde80000.pvtm: pvtm@1 probed
+Jan  1 12:00:01 smc kern.info kernel: [   14.563896] rockchip-pvtm fde90000.pvtm: pvtm@2 probed
+Jan  1 12:00:01 smc kern.info kernel: [   14.565287] rockchip-system-monitor rockchip-system-monitor: system monitor probe
+Jan  1 12:00:01 smc kern.err kernel: [   14.566815] arm-scmi firmware:scmi: Failed. SCMI protocol 22 not active.
+Jan  1 12:00:01 smc kern.info kernel: [   14.567244] Serial: 8250/16550 driver, 10 ports, IRQ sharing disabled
+Jan  1 12:00:01 smc kern.info kernel: [   14.569235] fe650000.serial: ttyS1 at MMIO 0xfe650000 (irq = 71, base_baud = 1500000) is a 16550A
+Jan  1 12:00:01 smc kern.info kernel: [   14.569554] serial serial0: tty port ttyS1 registered
+Jan  1 12:00:01 smc kern.notice kernel: [   14.573626] random: crng init done
+Jan  1 12:00:01 smc kern.info kernel: [   14.574927] rockchip-vop2 fe040000.vop: Adding to iommu group 7
+Jan  1 12:00:01 smc kern.warn kernel: [   14.589170] [drm] all windows should be assigned, full plane mask: 0x3f, current plane mask: 0x0
+Jan  1 12:00:01 smc kern.warn kernel: [   14.589232] [drm] use default plane mask
+Jan  1 12:00:01 smc kern.info kernel: [   14.589606] rockchip-vop2 fe040000.vop: [drm:vop2_bind] vp0 assign plane mask: 0x3f, primary plane phy id: 4
+Jan  1 12:00:01 smc kern.info kernel: [   14.589632] rockchip-vop2 fe040000.vop: [drm:vop2_bind] vp1 assign plane mask: 0x0, primary plane phy id: -1
+Jan  1 12:00:01 smc kern.info kernel: [   14.589654] rockchip-vop2 fe040000.vop: [drm:vop2_bind] vp2 assign plane mask: 0x0, primary plane phy id: -1
+Jan  1 12:00:01 smc kern.warn kernel: [   14.590124] [drm] failed to init overlay plane Cluster0-win1
+Jan  1 12:00:01 smc kern.warn kernel: [   14.590226] [drm] failed to init overlay plane Cluster1-win1
+Jan  1 12:00:01 smc kern.info kernel: [   14.590390] rockchip-drm display-subsystem: bound fe040000.vop (ops 0xffffffc008f80ff0)
+Jan  1 12:00:01 smc kern.info kernel: [   14.590846] dwhdmi-rockchip fe0a0000.hdmi: Detected HDMI TX controller v2.11a with HDCP (DWC HDMI 2.0 TX PHY)
+Jan  1 12:00:01 smc kern.info kernel: [   14.591853] dwhdmi-rockchip fe0a0000.hdmi: registered DesignWare HDMI I2C bus driver
+Jan  1 12:00:01 smc kern.err kernel: [   14.592275] dwhdmi-rockchip fe0a0000.hdmi: IRQ index 1 not found
+Jan  1 12:00:01 smc kern.info kernel: [   14.592991] rockchip-drm display-subsystem: bound fe0a0000.hdmi (ops 0xffffffc008f8f168)
+Jan  1 12:00:01 smc kern.warn kernel: [   14.593500] rockchip-drm display-subsystem: failed to parse loader memory
+Jan  1 12:00:01 smc kern.info kernel: [   14.593675] rockchip-drm display-subsystem: [drm] Cannot find any crtc or sizes
+Jan  1 12:00:01 smc kern.info kernel: [   14.593829] rockchip-drm display-subsystem: [drm] Cannot find any crtc or sizes
+Jan  1 12:00:01 smc kern.info kernel: [   14.595197] [drm] Initialized rockchip 3.0.0 20140818 for display-subsystem on minor 0
+Jan  1 12:00:01 smc kern.err kernel: [   14.595885] no ATF memory for init
+Jan  1 12:00:01 smc kern.info kernel: [   14.605375] input: hdmi_cec_key as /devices/platform/fe0a0000.hdmi/dw-hdmi-cec.1.auto/input/input0
+Jan  1 12:00:01 smc kern.warn kernel: [   14.607115] cacheinfo: Unable to detect cache hierarchy for CPU 0
+Jan  1 12:00:01 smc kern.info kernel: [   14.608317] brd: module loaded
+Jan  1 12:00:01 smc kern.info kernel: [   14.618911] loop: module loaded
+Jan  1 12:00:01 smc kern.info kernel: [   14.619706] zram: Added device: zram0
+Jan  1 12:00:01 smc kern.info kernel: [   14.620192] lkdtm: No crash points registered, enable through debugfs
+Jan  1 12:00:01 smc kern.err kernel: [   14.621583] no ATF memory for init
+Jan  1 12:00:01 smc kern.info kernel: [   14.628873] spi-nor spi4.0: w25q128jwm (16384 Kbytes) read_data x4
+Jan  1 12:00:01 smc kern.info kernel: [   14.634922] rk_gmac-dwmac fe010000.ethernet: IRQ eth_lpi not found
+Jan  1 12:00:01 smc kern.debug kernel: [   14.635334] rk_gmac-dwmac fe010000.ethernet: Looking up phy-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   14.635369] rk_gmac-dwmac fe010000.ethernet: Looking up phy-supply property in node /ethernet@fe010000 failed
+Jan  1 12:00:01 smc kern.err kernel: [   14.635402] rk_gmac-dwmac fe010000.ethernet: no regulator found
+Jan  1 12:00:01 smc kern.info kernel: [   14.635426] rk_gmac-dwmac fe010000.ethernet: clock input or output? (output).
+Jan  1 12:00:01 smc kern.info kernel: [   14.635445] rk_gmac-dwmac fe010000.ethernet: TX delay(0x42).
+Jan  1 12:00:01 smc kern.info kernel: [   14.635512] rk_gmac-dwmac fe010000.ethernet: RX delay(0x28).
+Jan  1 12:00:01 smc kern.info kernel: [   14.635543] rk_gmac-dwmac fe010000.ethernet: integrated PHY? (no).
+Jan  1 12:00:01 smc kern.info kernel: [   14.635881] rk_gmac-dwmac fe010000.ethernet: init for RGMII
+Jan  1 12:00:01 smc kern.info kernel: [   14.636309] rk_gmac-dwmac fe010000.ethernet: User ID: 0x30, Synopsys ID: 0x51
+Jan  1 12:00:01 smc kern.info kernel: [   14.636338] rk_gmac-dwmac fe010000.ethernet:   DWMAC4/5
+Jan  1 12:00:01 smc kern.info kernel: [   14.636358] rk_gmac-dwmac fe010000.ethernet: DMA HW capability register supported
+Jan  1 12:00:01 smc kern.info kernel: [   14.636374] rk_gmac-dwmac fe010000.ethernet: RX Checksum Offload Engine supported
+Jan  1 12:00:01 smc kern.info kernel: [   14.636389] rk_gmac-dwmac fe010000.ethernet: TX Checksum insertion supported
+Jan  1 12:00:01 smc kern.info kernel: [   14.636402] rk_gmac-dwmac fe010000.ethernet: Wake-Up On Lan supported
+Jan  1 12:00:01 smc kern.info kernel: [   14.636526] rk_gmac-dwmac fe010000.ethernet: TSO supported
+Jan  1 12:00:01 smc kern.info kernel: [   14.636545] rk_gmac-dwmac fe010000.ethernet: Enable RX Mitigation via HW Watchdog Timer
+Jan  1 12:00:01 smc kern.info kernel: [   14.636563] rk_gmac-dwmac fe010000.ethernet: TSO feature enabled
+Jan  1 12:00:01 smc kern.info kernel: [   14.636580] rk_gmac-dwmac fe010000.ethernet: Using 32 bits DMA width
+Jan  1 12:00:01 smc kern.info kernel: [   14.740010] rk-pcie 3c0000000.pcie: PCIe Linking... LTSSM is 0x3
+Jan  1 12:00:01 smc kern.info kernel: [   14.763333] rk-pcie 3c0800000.pcie: PCIe Linking... LTSSM is 0x0
+Jan  1 12:00:01 smc kern.info kernel: [   14.765570] rk-pcie 3c0000000.pcie: PCIe Linking... LTSSM is 0x3
+Jan  1 12:00:01 smc kern.info kernel: [   14.774053] usbcore: registered new interface driver rndis_wlan
+Jan  1 12:00:01 smc kern.info kernel: [   14.774172] usbcore: registered new interface driver asix
+Jan  1 12:00:01 smc kern.info kernel: [   14.774257] usbcore: registered new interface driver cdc_ether
+Jan  1 12:00:01 smc kern.info kernel: [   14.774327] usbcore: registered new interface driver rndis_host
+Jan  1 12:00:01 smc kern.info kernel: [   14.774430] usbcore: registered new interface driver cdc_ncm
+Jan  1 12:00:01 smc kern.warn kernel: [   14.783463] naneng-combphy fe830000.phy: wait phy status ready timeout
+Jan  1 12:00:01 smc kern.info kernel: [   14.788862] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Jan  1 12:00:01 smc kern.info kernel: [   14.788884] rk-pcie 3c0800000.pcie: PCIe Linking... LTSSM is 0x0
+Jan  1 12:00:01 smc kern.info kernel: [   14.788946] ehci-pci: EHCI PCI platform driver
+Jan  1 12:00:01 smc kern.info kernel: [   14.789065] ehci-platform: EHCI generic platform driver
+Jan  1 12:00:01 smc kern.info kernel: [   14.789741] phy phy-fe8b0000.usb2-phy.3: illegal mode
+Jan  1 12:00:01 smc kern.info kernel: [   14.791829] ehci-platform fd800000.usb: EHCI Host Controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.791897] ehci-platform fd800000.usb: new USB bus registered, assigned bus number 1
+Jan  1 12:00:01 smc kern.info kernel: [   14.792190] ehci-platform fd800000.usb: irq 19, io mem 0xfd800000
+Jan  1 12:00:01 smc kern.info kernel: [   14.795513] rk-pcie 3c0000000.pcie: PCIe Linking... LTSSM is 0x3
+Jan  1 12:00:01 smc kern.info kernel: [   14.805533] ehci-platform fd800000.usb: USB 2.0 started, EHCI 1.00
+Jan  1 12:00:01 smc kern.info kernel: [   14.806003] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+Jan  1 12:00:01 smc kern.info kernel: [   14.806027] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jan  1 12:00:01 smc kern.info kernel: [   14.806045] usb usb1: Product: EHCI Host Controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.806060] usb usb1: Manufacturer: Linux 5.10.160-dirty ehci_hcd
+Jan  1 12:00:01 smc kern.info kernel: [   14.806074] usb usb1: SerialNumber: fd800000.usb
+Jan  1 12:00:01 smc kern.info kernel: [   14.806961] hub 1-0:1.0: USB hub found
+Jan  1 12:00:01 smc kern.info kernel: [   14.807048] hub 1-0:1.0: 1 port detected
+Jan  1 12:00:01 smc kern.info kernel: [   14.810333] ehci-platform fd880000.usb: EHCI Host Controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.810401] ehci-platform fd880000.usb: new USB bus registered, assigned bus number 2
+Jan  1 12:00:01 smc kern.info kernel: [   14.810609] ehci-platform fd880000.usb: irq 21, io mem 0xfd880000
+Jan  1 12:00:01 smc kern.info kernel: [   14.815514] rk-pcie 3c0800000.pcie: PCIe Linking... LTSSM is 0x0
+Jan  1 12:00:01 smc kern.info kernel: [   14.822198] rk-pcie 3c0000000.pcie: PCIe Linking... LTSSM is 0x3
+Jan  1 12:00:01 smc kern.info kernel: [   14.822207] ehci-platform fd880000.usb: USB 2.0 started, EHCI 1.00
+Jan  1 12:00:01 smc kern.info kernel: [   14.822634] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+Jan  1 12:00:01 smc kern.info kernel: [   14.822660] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jan  1 12:00:01 smc kern.info kernel: [   14.822677] usb usb2: Product: EHCI Host Controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.822693] usb usb2: Manufacturer: Linux 5.10.160-dirty ehci_hcd
+Jan  1 12:00:01 smc kern.info kernel: [   14.822708] usb usb2: SerialNumber: fd880000.usb
+Jan  1 12:00:01 smc kern.info kernel: [   14.823540] hub 2-0:1.0: USB hub found
+Jan  1 12:00:01 smc kern.info kernel: [   14.823624] hub 2-0:1.0: 1 port detected
+Jan  1 12:00:01 smc kern.info kernel: [   14.824908] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Jan  1 12:00:01 smc kern.info kernel: [   14.824957] ohci-platform: OHCI generic platform driver
+Jan  1 12:00:01 smc kern.info kernel: [   14.825449] phy phy-fe8b0000.usb2-phy.3: illegal mode
+Jan  1 12:00:01 smc kern.info kernel: [   14.825532] ohci-platform fd840000.usb: Generic Platform OHCI controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.825575] ohci-platform fd840000.usb: new USB bus registered, assigned bus number 3
+Jan  1 12:00:01 smc kern.info kernel: [   14.825783] ohci-platform fd840000.usb: irq 20, io mem 0xfd840000
+Jan  1 12:00:01 smc kern.info kernel: [   14.842185] rk-pcie 3c0800000.pcie: PCIe Linking... LTSSM is 0x0
+Jan  1 12:00:01 smc kern.info kernel: [   14.848865] rk-pcie 3c0000000.pcie: PCIe Linking... LTSSM is 0x3
+Jan  1 12:00:01 smc kern.info kernel: [   14.868858] rk-pcie 3c0800000.pcie: PCIe Linking... LTSSM is 0x0
+Jan  1 12:00:01 smc kern.info kernel: [   14.886987] usb usb3: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
+Jan  1 12:00:01 smc kern.info kernel: [   14.887030] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jan  1 12:00:01 smc kern.info kernel: [   14.887049] usb usb3: Product: Generic Platform OHCI controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.887067] usb usb3: Manufacturer: Linux 5.10.160-dirty ohci_hcd
+Jan  1 12:00:01 smc kern.info kernel: [   14.887082] usb usb3: SerialNumber: fd840000.usb
+Jan  1 12:00:01 smc kern.info kernel: [   14.887888] hub 3-0:1.0: USB hub found
+Jan  1 12:00:01 smc kern.info kernel: [   14.887973] hub 3-0:1.0: 1 port detected
+Jan  1 12:00:01 smc kern.info kernel: [   14.889082] ohci-platform fd8c0000.usb: Generic Platform OHCI controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.889131] ohci-platform fd8c0000.usb: new USB bus registered, assigned bus number 4
+Jan  1 12:00:01 smc kern.info kernel: [   14.889340] ohci-platform fd8c0000.usb: irq 22, io mem 0xfd8c0000
+Jan  1 12:00:01 smc kern.info kernel: [   14.949872] usb usb4: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
+Jan  1 12:00:01 smc kern.info kernel: [   14.949914] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jan  1 12:00:01 smc kern.info kernel: [   14.949934] usb usb4: Product: Generic Platform OHCI controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.949952] usb usb4: Manufacturer: Linux 5.10.160-dirty ohci_hcd
+Jan  1 12:00:01 smc kern.info kernel: [   14.949966] usb usb4: SerialNumber: fd8c0000.usb
+Jan  1 12:00:01 smc kern.info kernel: [   14.950812] hub 4-0:1.0: USB hub found
+Jan  1 12:00:01 smc kern.info kernel: [   14.950898] hub 4-0:1.0: 1 port detected
+Jan  1 12:00:01 smc kern.info kernel: [   14.953078] xhci-hcd xhci-hcd.4.auto: xHCI Host Controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.953137] xhci-hcd xhci-hcd.4.auto: new USB bus registered, assigned bus number 5
+Jan  1 12:00:01 smc kern.info kernel: [   14.953360] xhci-hcd xhci-hcd.4.auto: hcc params 0x0220fe64 hci version 0x110 quirks 0x0000200002010010
+Jan  1 12:00:01 smc kern.info kernel: [   14.953469] xhci-hcd xhci-hcd.4.auto: irq 84, io mem 0xfd000000
+Jan  1 12:00:01 smc kern.info kernel: [   14.954125] usb usb5: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+Jan  1 12:00:01 smc kern.info kernel: [   14.954151] usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jan  1 12:00:01 smc kern.info kernel: [   14.954169] usb usb5: Product: xHCI Host Controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.954185] usb usb5: Manufacturer: Linux 5.10.160-dirty xhci-hcd
+Jan  1 12:00:01 smc kern.info kernel: [   14.954200] usb usb5: SerialNumber: xhci-hcd.4.auto
+Jan  1 12:00:01 smc kern.info kernel: [   14.955026] hub 5-0:1.0: USB hub found
+Jan  1 12:00:01 smc kern.info kernel: [   14.955112] hub 5-0:1.0: 1 port detected
+Jan  1 12:00:01 smc kern.info kernel: [   14.955780] xhci-hcd xhci-hcd.4.auto: xHCI Host Controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.955817] xhci-hcd xhci-hcd.4.auto: new USB bus registered, assigned bus number 6
+Jan  1 12:00:01 smc kern.info kernel: [   14.955851] xhci-hcd xhci-hcd.4.auto: Host supports USB 3.0 SuperSpeed
+Jan  1 12:00:01 smc kern.info kernel: [   14.956015] usb usb6: We don't know the algorithms for LPM for this host, disabling LPM.
+Jan  1 12:00:01 smc kern.info kernel: [   14.956313] usb usb6: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.10
+Jan  1 12:00:01 smc kern.info kernel: [   14.956339] usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jan  1 12:00:01 smc kern.info kernel: [   14.956356] usb usb6: Product: xHCI Host Controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.956371] usb usb6: Manufacturer: Linux 5.10.160-dirty xhci-hcd
+Jan  1 12:00:01 smc kern.info kernel: [   14.956386] usb usb6: SerialNumber: xhci-hcd.4.auto
+Jan  1 12:00:01 smc kern.info kernel: [   14.957168] hub 6-0:1.0: USB hub found
+Jan  1 12:00:01 smc kern.info kernel: [   14.957250] hub 6-0:1.0: 1 port detected
+Jan  1 12:00:01 smc kern.info kernel: [   14.958137] xhci-hcd xhci-hcd.5.auto: xHCI Host Controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.958184] xhci-hcd xhci-hcd.5.auto: new USB bus registered, assigned bus number 7
+Jan  1 12:00:01 smc kern.info kernel: [   14.958425] xhci-hcd xhci-hcd.5.auto: hcc params 0x0220fe64 hci version 0x110 quirks 0x0000202002010010
+Jan  1 12:00:01 smc kern.info kernel: [   14.958533] xhci-hcd xhci-hcd.5.auto: irq 83, io mem 0xfcc00000
+Jan  1 12:00:01 smc kern.info kernel: [   14.959239] usb usb7: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+Jan  1 12:00:01 smc kern.info kernel: [   14.959265] usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jan  1 12:00:01 smc kern.info kernel: [   14.959283] usb usb7: Product: xHCI Host Controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.959299] usb usb7: Manufacturer: Linux 5.10.160-dirty xhci-hcd
+Jan  1 12:00:01 smc kern.info kernel: [   14.959313] usb usb7: SerialNumber: xhci-hcd.5.auto
+Jan  1 12:00:01 smc kern.info kernel: [   14.960121] hub 7-0:1.0: USB hub found
+Jan  1 12:00:01 smc kern.info kernel: [   14.960210] hub 7-0:1.0: 1 port detected
+Jan  1 12:00:01 smc kern.info kernel: [   14.960836] xhci-hcd xhci-hcd.5.auto: xHCI Host Controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.960873] xhci-hcd xhci-hcd.5.auto: new USB bus registered, assigned bus number 8
+Jan  1 12:00:01 smc kern.info kernel: [   14.960905] xhci-hcd xhci-hcd.5.auto: Host supports USB 3.0 SuperSpeed
+Jan  1 12:00:01 smc kern.info kernel: [   14.961074] usb usb8: We don't know the algorithms for LPM for this host, disabling LPM.
+Jan  1 12:00:01 smc kern.info kernel: [   14.961359] usb usb8: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.10
+Jan  1 12:00:01 smc kern.info kernel: [   14.961384] usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jan  1 12:00:01 smc kern.info kernel: [   14.961401] usb usb8: Product: xHCI Host Controller
+Jan  1 12:00:01 smc kern.info kernel: [   14.961415] usb usb8: Manufacturer: Linux 5.10.160-dirty xhci-hcd
+Jan  1 12:00:01 smc kern.info kernel: [   14.961431] usb usb8: SerialNumber: xhci-hcd.5.auto
+Jan  1 12:00:01 smc kern.info kernel: [   14.962260] hub 8-0:1.0: USB hub found
+Jan  1 12:00:01 smc kern.info kernel: [   14.962343] hub 8-0:1.0: 1 port detected
+Jan  1 12:00:01 smc kern.info kernel: [   14.963205] usbcore: registered new interface driver cdc_acm
+Jan  1 12:00:01 smc kern.info kernel: [   14.963226] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+Jan  1 12:00:01 smc kern.info kernel: [   14.963758] usbcore: registered new interface driver uas
+Jan  1 12:00:01 smc kern.info kernel: [   14.964013] usbcore: registered new interface driver usb-storage
+Jan  1 12:00:01 smc kern.info kernel: [   14.966807] usbcore: registered new interface driver usbtouchscreen
+Jan  1 12:00:01 smc kern.info kernel: [   14.968005] i2c /dev entries driver
+Jan  1 12:00:01 smc kern.info kernel: [   14.971220] fan53555-regulator 0-001c: FAN53555 Option[12] Rev[15] Detected!
+Jan  1 12:00:01 smc kern.debug kernel: [   14.971789] vdd_cpu: override max_uV, 1390000 -> 1387500
+Jan  1 12:00:01 smc kern.debug kernel: [   14.973148] fan53555-regulator 0-001c: Looking up vin-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   14.973496] vdd_cpu: supplied by vcc5v0_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   14.973529] vcc5v0_sys: could not add device link regulator.10: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   14.976581] vdd_cpu: 712 <--> 1387 mV at 1025 mV, enabled
+Jan  1 12:00:01 smc kern.info kernel: [   14.982228] rk808 0-0020: chip id: 0x8090
+Jan  1 12:00:01 smc kern.warn kernel: [   14.982347] rk808 0-0020: No cache defaults, reading back from HW
+Jan  1 12:00:01 smc kern.info kernel: [   15.006250] rk808 0-0020: source: on=0x40, off=0x00
+Jan  1 12:00:01 smc kern.info kernel: [   15.006304] rk808 0-0020: support dcdc3 fb mode:-22, 1
+Jan  1 12:00:01 smc kern.info kernel: [   15.006329] rk808 0-0020: support pmic reset mode:0,0
+Jan  1 12:00:01 smc kern.info kernel: [   15.016168] rk808-regulator rk808-regulator: there is no dvs0 gpio
+Jan  1 12:00:01 smc kern.info kernel: [   15.016253] rk808-regulator rk808-regulator: there is no dvs1 gpio
+Jan  1 12:00:01 smc kern.debug kernel: [   15.016374] rk808 0-0020: Looking up vcc1-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.016400] vdd_logic: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.016429] vcc3v3_sys: could not add device link regulator.11: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.016951] vdd_logic: 500 <--> 1350 mV at 900 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   15.017502] rk808 0-0020: Looking up vcc2-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.017522] vdd_gpu: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.017549] vcc3v3_sys: could not add device link regulator.12: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.018026] vdd_gpu: 500 <--> 1350 mV at 900 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   15.018488] rk808 0-0020: Looking up vcc3-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.018508] vcc_ddr: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.018552] vcc3v3_sys: could not add device link regulator.13: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.019010] vcc_ddr: at 500 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   15.019494] rk808 0-0020: Looking up vcc4-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.019514] vdd_npu: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.019561] vcc3v3_sys: could not add device link regulator.14: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.020023] vdd_npu: 500 <--> 1350 mV at 900 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   15.020470] rk808 0-0020: Looking up vcc9-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.020491] vcc_1v8: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.020535] vcc3v3_sys: could not add device link regulator.15: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.021012] vcc_1v8: 1800 mV, enabled
+Jan  1 12:00:01 smc kern.info kernel: [   15.021419] vdda0v9_image: Bringing 600000uV into 900000-900000uV
+Jan  1 12:00:01 smc kern.debug kernel: [   15.021833] vdda0v9_image: ramp_delay not set
+Jan  1 12:00:01 smc kern.debug kernel: [   15.021855] rk808 0-0020: Looking up vcc5-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.021873] vdda0v9_image: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.021900] vcc3v3_sys: could not add device link regulator.16: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.022886] vdda0v9_image: 900 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   15.023321] rk808 0-0020: Looking up vcc5-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.023340] vdda_0v9: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.023393] vcc3v3_sys: could not add device link regulator.17: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.024377] vdda_0v9: 900 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   15.024806] rk808 0-0020: Looking up vcc5-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.024825] vdda0v9_pmu: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.024870] vcc3v3_sys: could not add device link regulator.18: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.025860] vdda0v9_pmu: 900 mV, enabled
+Jan  1 12:00:01 smc kern.info kernel: [   15.026288] vccio_acodec: Bringing 3300000uV into 3000000-3000000uV
+Jan  1 12:00:01 smc kern.debug kernel: [   15.026698] vccio_acodec: ramp_delay not set
+Jan  1 12:00:01 smc kern.debug kernel: [   15.026721] rk808 0-0020: Looking up vcc6-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.026738] vccio_acodec: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.026764] vcc3v3_sys: could not add device link regulator.19: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.027747] vccio_acodec: 3000 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   15.028168] rk808 0-0020: Looking up vcc6-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.028187] vccio_sd: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.028235] vcc3v3_sys: could not add device link regulator.20: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.029250] vccio_sd: 1800 <--> 3300 mV at 3300 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   15.029682] rk808 0-0020: Looking up vcc6-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.029701] vcc3v3_pmu: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.029746] vcc3v3_sys: could not add device link regulator.21: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.030731] vcc3v3_pmu: 3300 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   15.031180] rk808 0-0020: Looking up vcc7-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.031199] vcca_1v8: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.031242] vcc3v3_sys: could not add device link regulator.22: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.032233] vcca_1v8: 1800 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   15.032684] rk808 0-0020: Looking up vcc7-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.032703] vcca1v8_pmu: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.032750] vcc3v3_sys: could not add device link regulator.23: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.033735] vcca1v8_pmu: 1800 mV, enabled
+Jan  1 12:00:01 smc kern.info kernel: [   15.034187] vcca1v8_image: Bringing 600000uV into 1800000-1800000uV
+Jan  1 12:00:01 smc kern.debug kernel: [   15.034600] vcca1v8_image: ramp_delay not set
+Jan  1 12:00:01 smc kern.debug kernel: [   15.034624] rk808 0-0020: Looking up vcc7-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.034641] vcca1v8_image: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.034669] vcc3v3_sys: could not add device link regulator.24: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.035678] vcca1v8_image: 1800 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   15.036118] rk808 0-0020: Looking up vcc9-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.036138] vcc_3v3: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.036183] vcc3v3_sys: could not add device link regulator.25: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.036630] vcc_3v3: at 3300 mV, enabled
+Jan  1 12:00:01 smc kern.debug kernel: [   15.037051] rk808 0-0020: Looking up vcc8-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.037070] vcc3v3_sd: supplied by vcc3v3_sys
+Jan  1 12:00:01 smc kern.debug kernel: [   15.037115] vcc3v3_sys: could not add device link regulator.26: -ENOENT
+Jan  1 12:00:01 smc kern.debug kernel: [   15.037559] vcc3v3_sd: at 3300 mV, enabled
+Jan  1 12:00:01 smc kern.warn kernel: [   15.037980] rk817-battery: Failed to locate of_node [id: -1]
+Jan  1 12:00:01 smc kern.err kernel: [   15.038236] rk817-battery rk817-battery: Failed to find matching dt id
+Jan  1 12:00:01 smc kern.warn kernel: [   15.038438] rk817-charger: Failed to locate of_node [id: -1]
+Jan  1 12:00:01 smc kern.err kernel: [   15.038651] rk817-charger rk817-charger: Failed to find matching dt id
+Jan  1 12:00:01 smc kern.info kernel: [   15.042410] input: rk805 pwrkey as /devices/platform/fdd40000.i2c/i2c-0/0-0020/rk805-pwrkey/input/input1
+Jan  1 12:00:01 smc kern.info kernel: [   15.049744] rtc-hym8563 5-0051: rtc information is invalid
+Jan  1 12:00:01 smc kern.info kernel: [   15.055539] usb 1-1: new high-speed USB device number 2 using ehci-platform
+Jan  1 12:00:01 smc kern.info kernel: [   15.057035] rtc-hym8563 5-0051: registered as rtc0
+Jan  1 12:00:01 smc kern.info kernel: [   15.058148] rtc-hym8563 5-0051: setting system clock to 2021-01-01T12:00:00 UTC (1609502400)
+Jan  1 12:00:01 smc kern.info kernel: [   15.064988] rkisp_hw fdff0000.rkisp: Adding to iommu group 6
+Jan  1 12:00:01 smc kern.info kernel: [   15.065395] rkisp_hw fdff0000.rkisp: is_thunderboot: 0
+Jan  1 12:00:01 smc kern.info kernel: [   15.065422] rkisp_hw fdff0000.rkisp: max input:0x0@0fps
+Jan  1 12:00:01 smc kern.err kernel: [   15.065542] rkisp_hw fdff0000.rkisp: can't request region for resource [mem 0xfdff0000-0xfdffffff]
+Jan  1 12:00:01 smc kern.warn kernel: [   15.065925] rkisp_hw fdff0000.rkisp: no find phandle sram
+Jan  1 12:00:01 smc kern.info kernel: [   15.068483] usbcore: registered new interface driver uvcvideo
+Jan  1 12:00:01 smc kern.info kernel: [   15.068526] USB Video Class driver (1.1.1)
+Jan  1 12:00:01 smc kern.info kernel: [   15.071982] cpu cpu0: leakage=24
+Jan  1 12:00:01 smc kern.info kernel: [   15.072210] cpu cpu0: pvtm = 86050, from nvmem
+Jan  1 12:00:01 smc kern.info kernel: [   15.072250] cpu cpu0: pvtm-volt-sel=1
+Jan  1 12:00:01 smc kern.debug kernel: [   15.072729] cpu cpu0: Looking up cpu-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.075254] cpu cpu0: avs=0
+Jan  1 12:00:01 smc kern.debug kernel: [   15.075577] cpu cpu0: EM: OPP:600000 is inefficient
+Jan  1 12:00:01 smc kern.debug kernel: [   15.075590] cpu cpu0: EM: OPP:408000 is inefficient
+Jan  1 12:00:01 smc kern.info kernel: [   15.075926] cpu cpu0: EM: created perf domain
+Jan  1 12:00:01 smc kern.info kernel: [   15.076067] cpu cpu0: l=0 h=2147483647 hyst=5000 l_limit=1800000000 h_limit=0 h_table=0
+Jan  1 12:00:01 smc kern.info kernel: [   15.083920] sdhci: Secure Digital Host Controller Interface driver
+Jan  1 12:00:01 smc kern.info kernel: [   15.083952] sdhci: Copyright(c) Pierre Ossman
+Jan  1 12:00:01 smc kern.info kernel: [   15.083959] Synopsys Designware Multimedia Card Interface Driver
+Jan  1 12:00:01 smc kern.info kernel: [   15.084437] sdhci-pltfm: SDHCI platform and OF driver helper
+Jan  1 12:00:01 smc kern.info kernel: [   15.085429] dwmmc_rockchip fe000000.dwmmc: IDMAC supports 32-bit address mode.
+Jan  1 12:00:01 smc kern.info kernel: [   15.085450] dwmmc_rockchip fe2b0000.dwmmc: IDMAC supports 32-bit address mode.
+Jan  1 12:00:01 smc kern.info kernel: [   15.085490] dwmmc_rockchip fe000000.dwmmc: Using internal DMA controller.
+Jan  1 12:00:01 smc kern.info kernel: [   15.085496] dwmmc_rockchip fe2b0000.dwmmc: Using internal DMA controller.
+Jan  1 12:00:01 smc kern.info kernel: [   15.085505] dwmmc_rockchip fe2b0000.dwmmc: Version ID is 270a
+Jan  1 12:00:01 smc kern.info kernel: [   15.085508] dwmmc_rockchip fe000000.dwmmc: Version ID is 270a
+Jan  1 12:00:01 smc kern.info kernel: [   15.085564] dwmmc_rockchip fe000000.dwmmc: DW MMC controller at irq 48,32 bit host data width,256 deep fifo
+Jan  1 12:00:01 smc kern.info kernel: [   15.085581] dwmmc_rockchip fe2b0000.dwmmc: DW MMC controller at irq 60,32 bit host data width,256 deep fifo
+Jan  1 12:00:01 smc kern.debug kernel: [   15.085667] dwmmc_rockchip fe000000.dwmmc: Looking up vmmc-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   15.085670] dwmmc_rockchip fe2b0000.dwmmc: Looking up vmmc-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   15.085727] dwmmc_rockchip fe000000.dwmmc: Looking up vmmc-supply property in node /dwmmc@fe000000 failed
+Jan  1 12:00:01 smc kern.debug kernel: [   15.085759] dwmmc_rockchip fe000000.dwmmc: Looking up vqmmc-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   15.085768] dwmmc_rockchip fe000000.dwmmc: Looking up vqmmc-supply property in node /dwmmc@fe000000 failed
+Jan  1 12:00:01 smc kern.debug kernel: [   15.085895] dwmmc_rockchip fe2b0000.dwmmc: Looking up vqmmc-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.086049] dwmmc_rockchip fe000000.dwmmc: allocated mmc-pwrseq
+Jan  1 12:00:01 smc kern.info kernel: [   15.086065] mmc_host mmc3: card is non-removable.
+Jan  1 12:00:01 smc kern.info kernel: [   15.086900] ledtrig-cpu: registered to indicate activity on CPUs
+Jan  1 12:00:01 smc kern.err kernel: [   15.086947] arm-scmi firmware:scmi: Failed. SCMI protocol 17 not active.
+Jan  1 12:00:01 smc kern.info kernel: [   15.087016] SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
+Jan  1 12:00:01 smc kern.debug kernel: [   15.087228] sdhci-dwcmshc fe310000.sdhci: Looking up vmmc-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   15.087241] sdhci-dwcmshc fe310000.sdhci: Looking up vmmc-supply property in node /sdhci@fe310000 failed
+Jan  1 12:00:01 smc kern.debug kernel: [   15.087277] sdhci-dwcmshc fe310000.sdhci: Looking up vqmmc-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   15.087285] sdhci-dwcmshc fe310000.sdhci: Looking up vqmmc-supply property in node /sdhci@fe310000 failed
+Jan  1 12:00:01 smc kern.info kernel: [   15.087962] cryptodev: driver 1.12 loaded.
+Jan  1 12:00:01 smc kern.info kernel: [   15.088026] hid: raw HID events driver (C) Jiri Kosina
+Jan  1 12:00:01 smc kern.info kernel: [   15.088375] usbcore: registered new interface driver usbhid
+Jan  1 12:00:01 smc kern.info kernel: [   15.088384] usbhid: USB HID core driver
+Jan  1 12:00:01 smc kern.debug kernel: [   15.091625] rockchip-saradc fe720000.saradc: Looking up vref-supply from device tree
+Jan  1 12:00:01 smc kern.err kernel: [   15.092972] rksfc_base v1.1 2016-01-08
+Jan  1 12:00:01 smc kern.info kernel: [   15.093788] usbcore: registered new interface driver snd-usb-audio
+Jan  1 12:00:01 smc kern.warn kernel: [   15.095592] rk817-codec rk817-codec: DMA mask not set
+Jan  1 12:00:01 smc kern.info kernel: [   15.096809] mmc_host mmc1: Bus speed (slot 0) = 375000Hz (slot req 400000Hz, actual 375000HZ div = 0)
+Jan  1 12:00:01 smc kern.info kernel: [   15.099120] mmc_host mmc3: Bus speed (slot 0) = 375000Hz (slot req 400000Hz, actual 375000HZ div = 0)
+Jan  1 12:00:01 smc kern.warn kernel: [   15.101565] rk-multicodecs rk809-sound: Failed to get ADC channel
+Jan  1 12:00:01 smc kern.err kernel: [   15.101833] rk-multicodecs rk809-sound: ASoC: Property 'rockchip,audio-routing' does not exist or its length is not even
+Jan  1 12:00:01 smc kern.warn kernel: [   15.101843] rk-multicodecs rk809-sound: Audio routing invalid/unspecified
+Jan  1 12:00:01 smc kern.info kernel: [   15.103103] rk817-codec rk817-codec: rk817_probe: chip_name:0x80, chip_ver:0x94
+Jan  1 12:00:01 smc kern.info kernel: [   15.109959] input: rockchip-rk809 Headset as /devices/platform/rk809-sound/sound/card0/input2
+Jan  1 12:00:01 smc kern.info kernel: [   15.110928] Initializing XFRM netlink socket
+Jan  1 12:00:01 smc kern.info kernel: [   15.110958] NET: Registered protocol family 17
+Jan  1 12:00:01 smc kern.info kernel: [   15.111209] [BT_RFKILL]: Enter rfkill_rk_init
+Jan  1 12:00:01 smc kern.info kernel: [   15.111218] [WLAN_RFKILL]: Enter rfkill_wlan_init
+Jan  1 12:00:01 smc kern.info kernel: [   15.111979] [WLAN_RFKILL]: Enter rfkill_wlan_probe
+Jan  1 12:00:01 smc kern.info kernel: [   15.112033] [WLAN_RFKILL]: wlan_platdata_parse_dt: wifi_chip_type = ap6256
+Jan  1 12:00:01 smc kern.info kernel: [   15.112041] [WLAN_RFKILL]: wlan_platdata_parse_dt: enable wifi power control.
+Jan  1 12:00:01 smc kern.info kernel: [   15.112048] [WLAN_RFKILL]: wlan_platdata_parse_dt: wifi power controled by gpio.
+Jan  1 12:00:01 smc kern.info kernel: [   15.112084] [WLAN_RFKILL]: wlan_platdata_parse_dt: WIFI,host_wake_irq = 125, flags = 0.
+Jan  1 12:00:01 smc kern.info kernel: [   15.112107] [WLAN_RFKILL]: rfkill_wlan_probe: init gpio
+Jan  1 12:00:01 smc kern.info kernel: [   15.112115] [WLAN_RFKILL]: rfkill_set_wifi_bt_power: 1
+Jan  1 12:00:01 smc kern.info kernel: [   15.112304] [WLAN_RFKILL]: Exit rfkill_wlan_probe
+Jan  1 12:00:01 smc kern.notice kernel: [   15.112923] Key type dns_resolver registered
+Jan  1 12:00:01 smc kern.info kernel: [   15.113287] flash vendor_init_thread!
+Jan  1 12:00:01 smc kern.info kernel: [   15.113299] flash vendor storage:20170308 ret = -1
+Jan  1 12:00:01 smc kern.info kernel: [   15.114854] registered taskstats version 1
+Jan  1 12:00:01 smc kern.notice kernel: [   15.114886] Loading compiled-in X.509 certificates
+Jan  1 12:00:01 smc kern.info kernel: [   15.115120] pstore: Using crash dump compression: deflate
+Jan  1 12:00:01 smc kern.info kernel: [   15.116623] rga: rga2, irq = 29, match scheduler
+Jan  1 12:00:01 smc kern.info kernel: [   15.117430] rga: rga2 hardware loaded successfully, hw_version:3.2.63318.
+Jan  1 12:00:01 smc kern.info kernel: [   15.117475] rga: rga2 probe successfully
+Jan  1 12:00:01 smc kern.info kernel: [   15.117928] rga_iommu: IOMMU binding successfully, default mapping core[0x4]
+Jan  1 12:00:01 smc kern.info kernel: [   15.118373] rga: Module initialized. v1.2.26
+Jan  1 12:00:01 smc kern.info kernel: [   15.118780] mmc0: SDHCI controller on fe310000.sdhci [fe310000.sdhci] using ADMA
+Jan  1 12:00:01 smc kern.info kernel: [   15.138453] mmc_host mmc3: Bus speed (slot 0) = 375000Hz (slot req 375000Hz, actual 375000HZ div = 0)
+Jan  1 12:00:01 smc kern.info kernel: [   15.162390] mpp_rkvenc fdf40000.rkvenc: Adding to iommu group 4
+Jan  1 12:00:01 smc kern.info kernel: [   15.162740] mpp_rkvenc fdf40000.rkvenc: probing start
+Jan  1 12:00:01 smc kern.debug kernel: [   15.163157] mpp_rkvenc fdf40000.rkvenc: Looking up venc-supply from device tree
+Jan  1 12:00:01 smc kern.err kernel: [   15.163440] mpp_rkvenc fdf40000.rkvenc: Failed to get leakage
+Jan  1 12:00:01 smc kern.info kernel: [   15.163516] mpp_rkvenc fdf40000.rkvenc: pvtm = 86050, from nvmem
+Jan  1 12:00:01 smc kern.info kernel: [   15.163538] mpp_rkvenc fdf40000.rkvenc: pvtm-volt-sel=1
+Jan  1 12:00:01 smc kern.info kernel: [   15.163862] mpp_rkvenc fdf40000.rkvenc: avs=0
+Jan  1 12:00:01 smc kern.err kernel: [   15.164038] mpp_rkvenc fdf40000.rkvenc: failed to find power_model node
+Jan  1 12:00:01 smc kern.err kernel: [   15.164055] mpp_rkvenc fdf40000.rkvenc: failed to initialize power model
+Jan  1 12:00:01 smc kern.err kernel: [   15.164066] mpp_rkvenc fdf40000.rkvenc: failed to get dynamic-coefficient
+Jan  1 12:00:01 smc kern.info kernel: [   15.164741] mpp_rkvenc fdf40000.rkvenc: probing finish
+Jan  1 12:00:01 smc kern.info kernel: [   15.165257] mpp_rkvdec2 fdf80200.rkvdec: Adding to iommu group 5
+Jan  1 12:00:01 smc kern.info kernel: [   15.165689] mpp_rkvdec2 fdf80200.rkvdec: rkvdec, probing start
+Jan  1 12:00:01 smc kern.err kernel: [   15.166173] mpp_rkvdec2 fdf80200.rkvdec: shared_niu_a is not found!
+Jan  1 12:00:01 smc kern.err kernel: [   15.166188] rkvdec2_init:1022: No niu aclk reset resource define
+Jan  1 12:00:01 smc kern.err kernel: [   15.166202] mpp_rkvdec2 fdf80200.rkvdec: shared_niu_h is not found!
+Jan  1 12:00:01 smc kern.err kernel: [   15.166212] rkvdec2_init:1025: No niu hclk reset resource define
+Jan  1 12:00:01 smc kern.debug kernel: [   15.166257] mpp_rkvdec2 fdf80200.rkvdec: Looking up vdec-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.166659] mpp_rkvdec2 fdf80200.rkvdec: leakage=48
+Jan  1 12:00:01 smc kern.info kernel: [   15.166683] mpp_rkvdec2 fdf80200.rkvdec: leakage-volt-sel=0
+Jan  1 12:00:01 smc kern.info kernel: [   15.166734] mpp_rkvdec2 fdf80200.rkvdec: pvtm = 86050, from nvmem
+Jan  1 12:00:01 smc kern.info kernel: [   15.166755] mpp_rkvdec2 fdf80200.rkvdec: pvtm-volt-sel=1
+Jan  1 12:00:01 smc kern.info kernel: [   15.167054] mpp_rkvdec2 fdf80200.rkvdec: avs=0
+Jan  1 12:00:01 smc kern.err kernel: [   15.167243] mpp_rkvdec2 fdf80200.rkvdec: failed to find power_model node
+Jan  1 12:00:01 smc kern.err kernel: [   15.167259] mpp_rkvdec2 fdf80200.rkvdec: failed to initialize power model
+Jan  1 12:00:01 smc kern.err kernel: [   15.167271] mpp_rkvdec2 fdf80200.rkvdec: failed to get dynamic-coefficient
+Jan  1 12:00:01 smc kern.info kernel: [   15.167440] mpp_rkvdec2 fdf80200.rkvdec: sram_start 0x00000000fdcc0000
+Jan  1 12:00:01 smc kern.info kernel: [   15.167455] mpp_rkvdec2 fdf80200.rkvdec: rcb_iova 0x0000000010000000
+Jan  1 12:00:01 smc kern.info kernel: [   15.167467] mpp_rkvdec2 fdf80200.rkvdec: sram_size 45056
+Jan  1 12:00:01 smc kern.info kernel: [   15.167477] mpp_rkvdec2 fdf80200.rkvdec: rcb_size 65536
+Jan  1 12:00:01 smc kern.info kernel: [   15.167489] mpp_rkvdec2 fdf80200.rkvdec: min_width 512
+Jan  1 12:00:01 smc kern.info kernel: [   15.167567] mpp_rkvdec2 fdf80200.rkvdec: link mode probe finish
+Jan  1 12:00:01 smc kern.info kernel: [   15.167673] mpp_rkvdec2 fdf80200.rkvdec: probing finish
+Jan  1 12:00:01 smc kern.debug kernel: [   15.169080] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up gpu-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   15.169117] rockchip-pm-domain fdd90000.power-management:power-controller: Looking up gpu-supply property in node /power-management@fdd90000/power-controller failed
+Jan  1 12:00:01 smc kern.info kernel: [   15.169208] mali fde60000.gpu: Kernel DDK version g17p0-01eac0
+Jan  1 12:00:01 smc kern.err kernel: [   15.169281] of_clk_hw_onecell_get: invalid index 3
+Jan  1 12:00:01 smc kern.err kernel: [   15.169292] mali fde60000.gpu: Insufficient register space, will override to the required size
+Jan  1 12:00:01 smc kern.err kernel: [   15.169312] mali fde60000.gpu: Register window unavailable
+Jan  1 12:00:01 smc kern.debug kernel: [   15.169322] rockchip-dmc dmc: Looking up center-supply from device tree
+Jan  1 12:00:01 smc kern.err kernel: [   15.169328] mali fde60000.gpu: Failed to map registers
+Jan  1 12:00:01 smc kern.err kernel: [   15.169340] mali fde60000.gpu: Register map failed error = -5
+Jan  1 12:00:01 smc kern.err kernel: [   15.169350] mali fde60000.gpu: Device initialization failed
+Jan  1 12:00:01 smc kern.debug kernel: [   15.169503] rockchip-dmc dmc: Looking up center-supply from device tree
+Jan  1 12:00:01 smc kern.warn kernel: [   15.169520] mali: probe of fde60000.gpu failed with error -5
+Jan  1 12:00:01 smc kern.debug kernel: [   15.169539] vdd_logic: could not add device link dmc: -EEXIST
+Jan  1 12:00:01 smc kern.debug kernel: [   15.169545] vdd_logic: Failed to create debugfs directory
+Jan  1 12:00:01 smc kern.err kernel: [   15.169568] of_clk_hw_onecell_get: invalid index 3
+Jan  1 12:00:01 smc kern.err kernel: [   15.169587] rockchip-dmc dmc: Cannot get the clk dmc_clk. If using SCMI, trusted firmware need update to V1.01 and above.
+Jan  1 12:00:01 smc kern.warn kernel: [   15.169889] rockchip-dmc: probe of dmc failed with error -2
+Jan  1 12:00:01 smc kern.debug kernel: [   15.170269] rockchip-iodomain fdc20000.syscon:io-domains: Looking up pmuio1-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   15.170290] rockchip-iodomain fdc20000.syscon:io-domains: Looking up pmuio1-supply property in node /syscon@fdc20000/io-domains failed
+Jan  1 12:00:01 smc kern.debug kernel: [   15.170333] rockchip-iodomain fdc20000.syscon:io-domains: Looking up pmuio2-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.170622] rockchip-iodomain fdc20000.syscon:io-domains: pmuio2(3300000 uV) supplied by vcc3v3_pmu
+Jan  1 12:00:01 smc kern.debug kernel: [   15.170643] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio1-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.170857] rockchip-iodomain fdc20000.syscon:io-domains: vccio1(3000000 uV) supplied by vccio_acodec
+Jan  1 12:00:01 smc kern.debug kernel: [   15.170876] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio2-supply from device tree
+Jan  1 12:00:01 smc kern.debug kernel: [   15.170892] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio2-supply property in node /syscon@fdc20000/io-domains failed
+Jan  1 12:00:01 smc kern.debug kernel: [   15.170925] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio3-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.171098] rockchip-iodomain fdc20000.syscon:io-domains: vccio3(3300000 uV) supplied by vccio_sd
+Jan  1 12:00:01 smc kern.debug kernel: [   15.171117] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio4-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.171328] rockchip-iodomain fdc20000.syscon:io-domains: vccio4(1800000 uV) supplied by vcc_1v8
+Jan  1 12:00:01 smc kern.debug kernel: [   15.171347] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio5-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.171543] rockchip-iodomain fdc20000.syscon:io-domains: vccio5(3300000 uV) supplied by vcc_3v3
+Jan  1 12:00:01 smc kern.debug kernel: [   15.171562] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio6-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.171670] rockchip-iodomain fdc20000.syscon:io-domains: vccio6(1800000 uV) supplied by vcc_1v8
+Jan  1 12:00:01 smc kern.debug kernel: [   15.171689] rockchip-iodomain fdc20000.syscon:io-domains: Looking up vccio7-supply from device tree
+Jan  1 12:00:01 smc kern.info kernel: [   15.171782] rockchip-iodomain fdc20000.syscon:io-domains: vccio7(3300000 uV) supplied by vcc_3v3
+Jan  1 12:00:01 smc kern.err kernel: [   15.172440] adc_keys adc-keys: keymap is missing
+Jan  1 12:00:01 smc kern.warn kernel: [   15.172472] adc_keys: probe of adc-keys failed with error -22
+Jan  1 12:00:01 smc kern.err kernel: [   15.714937] mmc1: delay init for 600 ms to enable UHS mode
+Jan  1 12:00:01 smc kern.notice kernel: [   15.721605] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Jan  1 12:00:01 smc kern.notice kernel: [   15.724275] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Jan  1 12:00:01 smc kern.warn kernel: [   15.725324] rockchip-pm rockchip-suspend: not set pwm-regulator-config
+Jan  1 12:00:01 smc kern.info kernel: [   15.725360] rockchip-suspend not set sleep-mode-config for mem-lite
+Jan  1 12:00:01 smc kern.info kernel: [   15.725369] rockchip-suspend not set wakeup-config for mem-lite
+Jan  1 12:00:01 smc kern.info kernel: [   15.725380] rockchip-suspend not set sleep-mode-config for mem-ultra
+Jan  1 12:00:01 smc kern.info kernel: [   15.725387] rockchip-suspend not set wakeup-config for mem-ultra
+Jan  1 12:00:01 smc kern.info kernel: [   15.726331] I : [File] : drivers/gpu/arm/mali400/mali/linux/mali_kernel_linux.c; [Line] : 406; [Func] : mali_module_init(); svn_rev_string_from_arm of this mali_ko is '', rk_ko_ver is '5', built at '14:30:06', on 'Jan 12 2024
+Jan  1 12:00:01 smc kern.warn kernel: [   15.726796] Mali: 
+Jan  1 12:00:01 smc kern.warn kernel: [   15.726800] Mali device driver loaded
+Jan  1 12:00:01 smc kern.info kernel: [   15.726820] ALSA device list:
+Jan  1 12:00:01 smc kern.info kernel: [   15.726829]   #0: rockchip-rk809
+Jan  1 12:00:01 smc kern.info kernel: [   15.726836]   #1: rockchip-hdmi0
+Jan  1 12:00:01 smc kern.info kernel: [   15.727123] Waiting for root device /dev/mmcblk1p2...
+Jan  1 12:00:01 smc kern.warn kernel: [   15.727274] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+Jan  1 12:00:01 smc kern.info kernel: [   15.727290] cfg80211: failed to load regulatory.db
+Jan  1 12:00:01 smc kern.debug kernel: [   15.734904] vccio_sd: ramp_delay not set
+Jan  1 12:00:01 smc kern.info kernel: [   15.756746] mmc_host mmc1: Bus speed (slot 0) = 148500000Hz (slot req 150000000Hz, actual 148500000HZ div = 0)
+Jan  1 12:00:01 smc kern.info kernel: [   15.780014] dwmmc_rockchip fe2b0000.dwmmc: Successfully tuned phase to 270
+Jan  1 12:00:01 smc kern.info kernel: [   15.780057] mmc1: new ultra high speed SDR104 SDHC card at address 59b4
+Jan  1 12:00:01 smc kern.info kernel: [   15.781083] mmcblk1: mmc1:59b4 USDU1 14.9 GiB 
+Jan  1 12:00:01 smc kern.warn kernel: [   15.787762] GPT:Primary header thinks Alt. header is not at the end of the disk.
+Jan  1 12:00:01 smc kern.warn kernel: [   15.787802] GPT:2842663 != 31176703
+Jan  1 12:00:01 smc kern.warn kernel: [   15.787811] GPT:Alternate GPT header not at the end of the disk.
+Jan  1 12:00:01 smc kern.warn kernel: [   15.787818] GPT:2842663 != 31176703
+Jan  1 12:00:01 smc kern.warn kernel: [   15.787824] GPT: Use GNU Parted to correct GPT errors.
+Jan  1 12:00:01 smc kern.info kernel: [   15.787866]  mmcblk1: p1 p2 p3 p4
+Jan  1 12:00:01 smc kern.info kernel: [   15.799650] usb 1-1: New USB device found, idVendor=1a40, idProduct=0101, bcdDevice= 1.11
+Jan  1 12:00:01 smc kern.info kernel: [   15.799688] usb 1-1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+Jan  1 12:00:01 smc kern.info kernel: [   15.799700] usb 1-1: Product: USB 2.0 Hub
+Jan  1 12:00:01 smc kern.info kernel: [   15.800577] hub 1-1:1.0: USB hub found
+Jan  1 12:00:01 smc kern.info kernel: [   15.800896] hub 1-1:1.0: 4 ports detected
+Jan  1 12:00:01 smc kern.info kernel: [   15.824512] EXT4-fs (mmcblk1p2): mounted filesystem with ordered data mode. Opts: (null)
+Jan  1 12:00:01 smc kern.info kernel: [   15.824762] VFS: Mounted root (ext4 filesystem) on device 179:2.
+Jan  1 12:00:01 smc kern.info kernel: [   15.827133] devtmpfs: mounted
+Jan  1 12:00:01 smc kern.info kernel: [   15.839706] Freeing unused kernel memory: 6400K
+Jan  1 12:00:01 smc kern.info kernel: [   15.839857] Run /sbin/init as init process
+Jan  1 12:00:01 smc kern.debug kernel: [   15.839869]   with arguments:
+Jan  1 12:00:01 smc kern.debug kernel: [   15.839873]     /sbin/init
+Jan  1 12:00:01 smc kern.debug kernel: [   15.839876]     earlyprintk
+Jan  1 12:00:01 smc kern.debug kernel: [   15.839878]   with environment:
+Jan  1 12:00:01 smc kern.debug kernel: [   15.839881]     HOME=/
+Jan  1 12:00:01 smc kern.debug kernel: [   15.839884]     TERM=linux
+Jan  1 12:00:01 smc kern.info kernel: [   15.946048] EXT4-fs (mmcblk1p2): re-mounted. Opts: (null)
+Jan  1 12:00:01 smc user.warn kernel: [   16.048589] Running ldconfig...
+Jan  1 12:00:01 smc user.warn kernel: [   16.408507] ldconfig launched
+Jan  1 12:00:01 smc user.warn kernel: [   16.408775] Copying libmraa libraries to /usr/lib/...
+Jan  1 12:00:01 smc user.warn kernel: [   16.415622] Error copying libmraa.so.2022.08.1 to /usr/lib
+Jan  1 12:00:02 smc kern.info kernel: [   16.569184] rk_gmac-dwmac fe010000.ethernet eth0: PHY [stmmac-1:00] driver [RTL8211F Gigabit Ethernet] (irq=POLL)
+Jan  1 12:00:02 smc kern.info kernel: [   16.576583] dwmac4: Master AXI performs any burst length
+Jan  1 12:00:02 smc kern.info kernel: [   16.576643] rk_gmac-dwmac fe010000.ethernet eth0: No Safety Features support found
+Jan  1 12:00:02 smc kern.info kernel: [   16.576685] rk_gmac-dwmac fe010000.ethernet eth0: IEEE 1588-2008 Advanced Timestamp supported
+Jan  1 12:00:02 smc kern.info kernel: [   16.577056] rk_gmac-dwmac fe010000.ethernet eth0: registered PTP clock
+Jan  1 12:00:02 smc kern.info kernel: [   16.577604] rk_gmac-dwmac fe010000.ethernet eth0: configuring for phy/rgmii link mode
+Jan  1 12:00:02 smc kern.err kernel: [   17.429071] rk-pcie 3c0000000.pcie: PCIe Link Fail
+Jan  1 12:00:02 smc kern.err kernel: [   17.429178] rk-pcie 3c0000000.pcie: failed to initialize host
+Jan  1 12:00:02 smc kern.err kernel: [   17.449045] rk-pcie 3c0800000.pcie: PCIe Link Fail
+Jan  1 12:00:02 smc kern.err kernel: [   17.449145] rk-pcie 3c0800000.pcie: failed to initialize host
+Jan  1 12:00:03 smc kern.info kernel: [   18.215782] vendor storage:20190527 ret = -1
+Jan  1 12:00:05 smc kern.info kernel: [   19.936887] NET: Registered protocol family 10
+Jan  1 12:00:05 smc kern.info kernel: [   19.938940] Segment Routing with IPv6
+Jan  1 12:00:05 smc daemon.info dhcpcd[233]: dhcpcd-9.4.1 starting
+Jan  1 12:00:05 smc kern.info kernel: [   19.959147] 8021q: 802.1Q VLAN Support v1.8
+Jan  1 12:00:05 smc daemon.warn dhcpcd[238]: no interfaces have a carrier
+Jan  1 12:00:05 smc daemon.info dhcpcd[238]: eth0: waiting for carrier
+Jan  1 12:00:06 smc kern.info kernel: [   20.668432] rk_gmac-dwmac fe010000.ethernet eth0: Link is Up - 1Gbps/Full - flow control rx/tx
+Jan  1 12:00:06 smc kern.info kernel: [   20.668505] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Jan  1 12:00:06 smc daemon.info dhcpcd[238]: eth0: carrier acquired
+Jan  1 12:00:06 smc daemon.info dhcpcd[238]: DUID 00:01:00:01:27:81:cb:46:46:ae:43:aa:f9:d8
+Jan  1 12:00:06 smc daemon.info dhcpcd[238]: eth0: IAID 43:aa:f9:d8
+Jan  1 12:00:06 smc daemon.info dhcpcd[238]: eth0: adding address fe80::f571:25f5:f473:7e98
+Jan  1 12:00:06 smc auth.info sshd[257]: Server listening on 0.0.0.0 port 22.
+Jan  1 12:00:06 smc auth.info sshd[257]: Server listening on :: port 22.
+Jan  1 12:00:06 smc user.warn kernel: [   21.111852] Starting script to enable SSH root login.
+Jan  1 12:00:06 smc user.warn kernel: [   21.128015] SSH configuration updated to allow root login.
+Jan  1 12:00:06 smc auth.info sshd[257]: Received signal 15; terminating.
+Jan  1 12:00:06 smc auth.info sshd[269]: Server listening on 0.0.0.0 port 22.
+Jan  1 12:00:06 smc auth.info sshd[269]: Server listening on :: port 22.
+Jan  1 12:00:06 smc user.warn kernel: [   21.195131] SSH service restarted successfully.
+Jan  1 12:00:06 smc user.warn kernel: [   21.198411] Script completed successfully.
+Jan  1 12:00:06 smc daemon.info : starting pid 273, tty '/dev/console': '/sbin/getty -L  console 0 vt100 '
+Jan  1 12:00:06 smc daemon.info dhcpcd[238]: eth0: soliciting an IPv6 router
+Jan  1 12:00:07 smc daemon.info dhcpcd[238]: eth0: soliciting a DHCP lease
+Jan  1 12:00:12 smc daemon.info dhcpcd[238]: eth0: probing for an IPv4LL address
+Jan  1 12:00:17 smc daemon.info dhcpcd[238]: eth0: using IPv4LL address 169.254.211.200
+Jan  1 12:00:17 smc daemon.info dhcpcd[238]: eth0: adding route to 169.254.0.0/16
+Jan  1 12:00:17 smc daemon.info dhcpcd[238]: eth0: adding default route
+Jan  1 12:00:19 smc daemon.warn dhcpcd[238]: eth0: no IPv6 Routers available
+Jan  1 12:00:24 smc auth.info sshd[285]: Connection closed by 169.254.221.214 port 50296 [preauth]
+Jan  1 12:00:32 smc kern.info kernel: [   46.985815] pcie30_3v3: disabling
+Jan  1 12:00:39 smc auth.info sshd[289]: Accepted password for root from 169.254.221.214 port 50308 ssh2
+Jan  1 12:03:12 smc local1.notice libmraa[320]: libmraa version 2022.08.1 initialised by user 'root' with EUID 0
+Jan  1 12:03:12 smc local1.notice libmraa[320]: gpio: support for chardev interface is activated
+Jan  1 12:03:12 smc local1.notice libmraa[320]: libmraa initialised for platform 'Radxa ROCK3 Model A' of type 35
+Jan  1 12:03:15 smc local1.notice libmraa[321]: libmraa version 2022.08.1 initialised by user 'root' with EUID 0
+Jan  1 12:03:15 smc local1.notice libmraa[321]: gpio: support for chardev interface is activated
+Jan  1 12:03:15 smc local1.notice libmraa[321]: libmraa initialised for platform 'Radxa ROCK3 Model A' of type 35
+Jan  1 12:03:26 smc local1.notice libmraa[324]: libmraa version 2022.08.1 initialised by user 'root' with EUID 0
+Jan  1 12:03:26 smc local1.notice libmraa[324]: gpio: support for chardev interface is activated
+Jan  1 12:03:26 smc local1.notice libmraa[324]: libmraa initialised for platform 'Radxa ROCK3 Model A' of type 35
+Jan  1 12:03:26 smc local1.err libmraa[324]: spi: Failed opening SPI Device. bus:/dev/spidev3.0. Error 2 No such file or directory
